@@ -1,0 +1,34 @@
+h1:preface Preface
+h2:important-notes Important notes
+h3:attributions-and-versions Attributions and Versions
+h3:cc-by-sa-4.0-license CC BY-SA 4.0 license
+h3:copying-the-lab-manual Copying the lab manual
+h3:acknowledgments Acknowledgments
+h2:data Data
+h3:data-repository Data Repository
+h3:csv-format CSV format
+h3:spss-format SPSS format
+h2:software-jamovi Software: JAMOVI
+h3:getting-started-with-jamovi Getting Started with jamovi
+h4:installing-jamovi Installing jamovi
+h4:starting-jamovi-up Starting jamovi up
+h3:analyses Analyses
+h3:the-spreadsheet The Spreadsheet
+h4:variables Variables
+h4:computed-variables Computed Variables
+h5:rationale-for-recoding Rationale for Recoding
+h6:an-example-of-recoding-and-computing-a-new-variable An Example of Recoding and Computing a New Variable
+h5:z-scores-as-a-type-of-computed-variable-in-jamovi Z-scores (as a Type of Computed Variable in JAMOVI)
+h5:copy-and-paste Copy and Paste
+h5:syntax-mode Syntax Mode
+h3:loading-data-in-jamovi Loading Data in jamovi
+h4:importing-data-from-csv-files Importing Data from CSV Files
+h3:importing-unusual-data-files Importing Unusual Data Files
+h4:loading-data-from-text-files Loading Data from Text Files
+h5:loading-data-from-spss-and-other-statistics-packages Loading Data from SPSS (and other statistics packages)
+h5:loading-excel-files Loading Excel Files
+h3:changing-data-from-one-level-to-another Changing Data from One Level to Another
+h3:installing-add-on-modules-into-jamovi Installing Add-on Modules into jamovi
+h3:quitting-jamovi Quitting jamovi
+h3:summary Summary
+

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Lab 1 One-way ANOVA | Answering questions with data: Lab Manual</title>
+  <meta name="description" content="A lab manual for Psyc 394 at StFX" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Lab 1 One-way ANOVA | Answering questions with data: Lab Manual" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="A lab manual for Psyc 394 at StFX" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lab 1 One-way ANOVA | Answering questions with data: Lab Manual" />
+  
+  <meta name="twitter:description" content="A lab manual for Psyc 394 at StFX" />
+  
+
+<meta name="author" content="Matthew J. C. Crump, Anjali Krishnan, Stephen Volz, and Alla Chavarga" />
+<meta name="author" content="Adapted for PSYC 394, St. Francis Xavier University, by Erin L. Mazerolle and Sherry Neville-MacLean" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="followup-tests.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79429674-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-79429674-4');
+</script>
+
+
+<script type="text/javascript">
+mattcrump=1;
+</script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="tufte.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i><b>0.1</b> Important notes</a>
+<ul>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#attributions-and-versions"><i class="fa fa-check"></i><b>0.1.1</b> Attributions and Versions</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.2</b> CC BY-SA 4.0 license</a></li>
+<li class="chapter" data-level="0.1.3" data-path="index.html"><a href="index.html#copying-the-lab-manual"><i class="fa fa-check"></i><b>0.1.3</b> Copying the lab manual</a></li>
+<li class="chapter" data-level="0.1.4" data-path="index.html"><a href="index.html#acknowledgments"><i class="fa fa-check"></i><b>0.1.4</b> Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>0.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#data-repository"><i class="fa fa-check"></i><b>0.2.1</b> Data Repository</a></li>
+<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#csv-format"><i class="fa fa-check"></i><b>0.2.2</b> CSV format</a></li>
+<li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#spss-format"><i class="fa fa-check"></i><b>0.2.3</b> SPSS format</a></li>
+</ul></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#software-jamovi"><i class="fa fa-check"></i><b>0.3</b> Software: JAMOVI</a>
+<ul>
+<li class="chapter" data-level="0.3.1" data-path="index.html"><a href="index.html#getting-started-with-jamovi"><i class="fa fa-check"></i><b>0.3.1</b> Getting Started with jamovi</a></li>
+<li class="chapter" data-level="0.3.2" data-path="index.html"><a href="index.html#analyses"><i class="fa fa-check"></i><b>0.3.2</b> Analyses</a></li>
+<li class="chapter" data-level="0.3.3" data-path="index.html"><a href="index.html#the-spreadsheet"><i class="fa fa-check"></i><b>0.3.3</b> The Spreadsheet</a></li>
+<li class="chapter" data-level="0.3.4" data-path="index.html"><a href="index.html#loading-data-in-jamovi"><i class="fa fa-check"></i><b>0.3.4</b> Loading Data in jamovi</a></li>
+<li class="chapter" data-level="0.3.5" data-path="index.html"><a href="index.html#importing-unusual-data-files"><i class="fa fa-check"></i><b>0.3.5</b> Importing Unusual Data Files</a></li>
+<li class="chapter" data-level="0.3.6" data-path="index.html"><a href="index.html#changing-data-from-one-level-to-another"><i class="fa fa-check"></i><b>0.3.6</b> Changing Data from One Level to Another</a></li>
+<li class="chapter" data-level="0.3.7" data-path="index.html"><a href="index.html#installing-add-on-modules-into-jamovi"><i class="fa fa-check"></i><b>0.3.7</b> Installing Add-on Modules into jamovi</a></li>
+<li class="chapter" data-level="0.3.8" data-path="index.html"><a href="index.html#quitting-jamovi"><i class="fa fa-check"></i><b>0.3.8</b> Quitting jamovi</a></li>
+<li class="chapter" data-level="0.3.9" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>0.3.9</b> Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="one-way-anova.html"><a href="one-way-anova.html"><i class="fa fa-check"></i><b>1</b> One-way ANOVA</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="one-way-anova.html"><a href="one-way-anova.html#how-to-not-think-about-bad-memories-by-playing-tetris"><i class="fa fa-check"></i><b>1.1</b> How to not think about bad memories by playing Tetris</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="one-way-anova.html"><a href="one-way-anova.html#study-description"><i class="fa fa-check"></i><b>1.1.1</b> Study description</a></li>
+<li class="chapter" data-level="1.1.2" data-path="one-way-anova.html"><a href="one-way-anova.html#study-methods"><i class="fa fa-check"></i><b>1.1.2</b> Study Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="one-way-anova.html"><a href="one-way-anova.html#important-stuff"><i class="fa fa-check"></i><b>1.2</b> Important Stuff</a></li>
+<li class="chapter" data-level="1.3" data-path="one-way-anova.html"><a href="one-way-anova.html#jamovi"><i class="fa fa-check"></i><b>1.3</b> JAMOVI</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="one-way-anova.html"><a href="one-way-anova.html#experiment-background"><i class="fa fa-check"></i><b>1.3.1</b> Experiment Background</a></li>
+<li class="chapter" data-level="1.3.2" data-path="one-way-anova.html"><a href="one-way-anova.html#checking-assumptions"><i class="fa fa-check"></i><b>1.3.2</b> Checking Assumptions</a></li>
+<li class="chapter" data-level="1.3.3" data-path="one-way-anova.html"><a href="one-way-anova.html#performing-a-one-factor-analysis-of-variance-anova-graphing-the-data"><i class="fa fa-check"></i><b>1.3.3</b> Performing a One-Factor Analysis of Variance (ANOVA) &amp; Graphing the data</a></li>
+<li class="chapter" data-level="1.3.4" data-path="one-way-anova.html"><a href="one-way-anova.html#homework"><i class="fa fa-check"></i><b>1.3.4</b> Homework</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="followup-tests.html"><a href="followup-tests.html"><i class="fa fa-check"></i><b>2</b> Followup Tests</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="followup-tests.html"><a href="followup-tests.html#rationale-of-follow-up-tests"><i class="fa fa-check"></i><b>2.1</b> Rationale of Follow-Up Tests</a></li>
+<li class="chapter" data-level="2.2" data-path="followup-tests.html"><a href="followup-tests.html#jamovi-1"><i class="fa fa-check"></i><b>2.2</b> JAMOVI</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="followup-tests.html"><a href="followup-tests.html#unplanned-comparisons-method-1"><i class="fa fa-check"></i><b>2.2.1</b> Unplanned Comparisons: Method 1</a></li>
+<li class="chapter" data-level="2.2.2" data-path="followup-tests.html"><a href="followup-tests.html#unplanned-comparisons-method-2"><i class="fa fa-check"></i><b>2.2.2</b> Unplanned Comparisons: Method 2</a></li>
+<li class="chapter" data-level="2.2.3" data-path="followup-tests.html"><a href="followup-tests.html#planned-comparisons"><i class="fa fa-check"></i><b>2.2.3</b> Planned Comparisons</a></li>
+<li class="chapter" data-level="2.2.4" data-path="followup-tests.html"><a href="followup-tests.html#homework-1"><i class="fa fa-check"></i><b>2.2.4</b> Homework</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>3</b> Repeated Measures ANOVA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#betcha-cant-type-jhdbzkco-very-fast-on-your-first-try"><i class="fa fa-check"></i><b>3.1</b> Betcha can’t type JHDBZKCO very fast on your first try</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#study-description-1"><i class="fa fa-check"></i><b>3.1.1</b> STUDY DESCRIPTION</a></li>
+<li class="chapter" data-level="3.1.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#study-methods-1"><i class="fa fa-check"></i><b>3.1.2</b> Study Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#lab-skills-learned"><i class="fa fa-check"></i><b>3.2</b> Lab Skills Learned</a></li>
+<li class="chapter" data-level="3.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#important-stuff-1"><i class="fa fa-check"></i><b>3.3</b> Important Stuff</a></li>
+<li class="chapter" data-level="3.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#jamovi-2"><i class="fa fa-check"></i><b>3.4</b> JAMOVI</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#experiment-background-1"><i class="fa fa-check"></i><b>3.4.1</b> Experiment Background</a></li>
+<li class="chapter" data-level="3.4.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#checking-assumptions-1"><i class="fa fa-check"></i><b>3.4.2</b> Checking Assumptions</a></li>
+<li class="chapter" data-level="3.4.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#conduct-and-graph-one-factor-repeated-measures-anova"><i class="fa fa-check"></i><b>3.4.3</b> Conduct and graph One-Factor Repeated Measures ANOVA</a></li>
+<li class="chapter" data-level="3.4.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#conduct-follow-up-tests"><i class="fa fa-check"></i><b>3.4.4</b> Conduct follow-up tests</a></li>
+<li class="chapter" data-level="3.4.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#some-apa-formatting-reminders-for-writing-results-sections-1"><i class="fa fa-check"></i><b>3.4.5</b> Some APA formatting reminders for writing results sections</a></li>
+<li class="chapter" data-level="3.4.6" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#homework-2"><i class="fa fa-check"></i><b>3.4.6</b> Homework</a></li>
+<li class="chapter" data-level="3.4.7" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#practice-problems"><i class="fa fa-check"></i><b>3.4.7</b> Practice Problems</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Answering questions with data: Lab Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<img src="LabmanualCover.png" id="coverpic" width="350" style="display: block; margin: auto;" />
+<div id="one-way-anova" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Lab 1</span> One-way ANOVA<a href="one-way-anova.html#one-way-anova" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<script>
+$("#coverpic").hide();
+</script>
+<p><span class="newthought">
+The analysis of variance is not a mathematical theorem, but rather a convenient method of arranging the arithmetic.
+—R. A. Fisher
+</span></p>
+<div class="marginnote">
+<p>This lab is modified and extended from <a href="https://sites.trinity.edu/osl">Open Stats Labs</a>. Thanks to Open Stats Labs (Dr. Kevin P. McIntyre) for their fantastic work.</p>
+</div>
+<div id="how-to-not-think-about-bad-memories-by-playing-tetris" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> How to not think about bad memories by playing Tetris<a href="one-way-anova.html#how-to-not-think-about-bad-memories-by-playing-tetris" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This lab activity uses the open data from Experiment 2 of James et al. (2015) to teach one-way ANOVA with planned comparisons. Results of the activity provided below should exactly reproduce the results described in the paper.</p>
+<div id="study-description" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Study description<a href="one-way-anova.html#study-description" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Following traumatic experiences, some people have flashbacks, which are also called “intrusive memories” and are characterized by involuntary images of aspects of the traumatic event. Although people often try to simply forget traumatic memories, this approach is not very effective. Instead, previous research suggests that a better approach may be to try to change aspects of the memory after it is formed. For example, some research shows that traumatic memories can be altered and weakened to the point that they are no longer intrusive.</p>
+<p>Because intrusive memories of trauma are often visual in nature, James and colleagues (2015) sought to explore whether completing a visuospatial task (e.g., Tetris) after a memory was formed would interfere with the storage of that memory, and thereby reduce the frequency of subsequent intrusions. They hypothesized that only participants who complete a visuo-spatial task after reactivation of the traumatic memories would experience a reduction in intrusive memories. In comparison, simply completing a visuo-spatial task (without reactivation) or reactivation (without a visuo-spatial task), would not reduce the occurrence intrusive memories.</p>
+<p>In other words, if you play Tetris shortly after you were remembering bad memories, playing Tetris might weaken those memories, which could cause you experience those kinds of intrusive memories less often in the future.</p>
+</div>
+<div id="study-methods" class="section level3 hasAnchor" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Study Methods<a href="one-way-anova.html#study-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To test their hypothesis, the authors conducted an experiment ( N = 72, n = 18 per condition). The procedure is summarized as follows:</p>
+<p><strong>Trauma Film</strong>: All participants viewed a series of video clips of graphic violence (e.g., a person getting hit by a van while using his phone as he crosses the road) as a way to create memories that should become intrusive memories. Participants then went home and recorded the number of intrusive memories they experienced over the next 24 hours. Because this is before the experimental manipulations, all groups were predicted to have an equal occurrence of intrusive memories during the first 24-hours (called Day 0).</p>
+<p><strong>Experimental Task</strong>: After this 24-hour period, the participants returned to the lab and completed the experimental task. The experimenters randomly assigned participants to ONE of the following conditions:</p>
+<ol style="list-style-type: decimal">
+<li>No-task control: These participants completed a 10-minute music filler task.</li>
+<li>Reactivation + Tetris: These participants were shown a series of images from the trauma film to reactivate the traumatic memories (i.e., reactivation task). After a 10-minute music filler task, participants played the video game Tetris for 12 minutes.</li>
+<li>Tetris Only: These participants played Tetris for 12 minutes, but did not complete the reactivation task.</li>
+<li>Reactivation Only: These participants completed the reactivation task, but did not play Tetris.</li>
+</ol>
+<p><strong>Intrusive Memories</strong>: All participants were asked to record the number of intrusive memories that they experienced over the next seven days (Days 1 to 7).</p>
+<p>After the seven days had passed, participants completed an Intrusion-Provocation Task, in which they were shown blurred images from the trauma film and asked to indicate whether the blurred image triggered an intrusive memory.</p>
+</div>
+</div>
+<div id="important-stuff" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Important Stuff<a href="one-way-anova.html#important-stuff" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>citation: James, E. L., Bonsall, M. B., Hoppitt, L., Tunbridge, E. M., Geddes, J. R., Milton, A. L., &amp; Holmes, E. A. (2015). Computer game play reduces intrusive memories of experimental trauma via re-consolidation-update mechanisms. Psychological Science, 26, 1201-1215.</li>
+<li><a href="http://journals.sagepub.com/stoken/default+domain/hQ2W4fbPrZVJ7eyNJaqu/full">Link to .pdf of article</a></li>
+</ul>
+</div>
+<div id="jamovi" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> JAMOVI<a href="one-way-anova.html#jamovi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="marginnote">
+<p>This section is copied almost verbatim, with some editorial changes, from <a href="https://www.erinmazerolle.com/statisticsLab/lab-7-one-way-anova.html#spss-7">Answering questions with data: The lab manual for R, Excel, SPSS and JAMOVI, Lab 7, Section 7.6, SPSS</a>, according to its <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ast">CC license</a>. Thank you to Crump, Krishnan, Volz, &amp; Chavarga (2018).</p>
+</div>
+<p>In this lab (and the next lab), we will use JAMOVI to:</p>
+<ol style="list-style-type: decimal">
+<li>Perform a One-Factor Analysis of Variance (ANOVA) and Graph the data</li>
+<li>Planned comparisons: Use programmed contrasts to locate differences</li>
+<li>Unplanned comparisons: Use a <em>post-hoc</em> test to locate differences</li>
+</ol>
+<div id="experiment-background" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Experiment Background<a href="one-way-anova.html#experiment-background" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr />
+<p>As described at the beginning of this lab manual section, researchers in the James et al. (2015) study sought to explore whether completing a visuo-spatial task (e.g., Tetris) after a memory was formed would interfere with the storage of that memory, and thereby reduce the frequency of subsequent intrusions. They hypothesized that only participants who complete a visuo-spatial task after reactivation of the traumatic memories would experience a reduction in intrusive memories. In comparison, simply completing a visuo-spatial task (without reactivation) or reactivation (without a visuo-spatial task), would not reduce the occurrence intrusive memories. In other words, if you play Tetris shortly after you were remembering bad memories, you will experience intrusive memories less often in the future.</p>
+<p>The authors conducted an experiment (<em>N</em> = 72, <em>n</em> = 18 per condition) wherein all participants viewed a series of video clips of graphic violence (e.g., a person getting hit by a van while using his phone as he crosses the road). Over the next 24 hours, participants recorded their intrusive memories. All groups were predicted to have an equal occurrence of intrusive memories during this pre-manipulation period (called Day 0).</p>
+<p>Experimental Task: After this 24-hour period, the participants returned to the lab and completed the experimental task. The experimenters randomly assigned participants to ONE of the following conditions:</p>
+<ol style="list-style-type: decimal">
+<li>No-Task Control: These participants completed a 10-minute music filler task.</li>
+<li>Reactivation + Tetris: These participants were shown a series of images from the trauma film to reactivate the traumatic memories (i.e., reactivation task). After a 10-minute music filler task, participants played the video game Tetris for 12 minutes.</li>
+<li>Tetris Only: These participants played Tetris for 12 minutes, but did not complete the reactivation task.</li>
+<li>Reactivation Only: These participants completed the reactivation task, but did not play Tetris.</li>
+</ol>
+<p>Dependent variable: Intrusive Memories: All participants were asked to record the number of intrusive memories that they experienced over the next seven days (Days 1 to 7).</p>
+</div>
+<div id="checking-assumptions" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Checking Assumptions<a href="one-way-anova.html#checking-assumptions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Recall that the ANOVA is a parametric test, and the ANOVA test assumes:
+1. The sampling distributions are normally distributed. Consider the central limit theorem.
+2. The data are measured using an interval or a ratio scale. Consider what you know about how the data were collected and/or look at the variable attributes in the JAMOVI data spreadsheet.
+3. The scores are independent. Consider the experimental design and/or look at the JAMOVI data spreadsheet to verify whether or not different participants or subjects contribute to the means.
+4. The variances in the populations are roughly equal. Consider the result of Levene’s test.</p>
+</div>
+<div id="performing-a-one-factor-analysis-of-variance-anova-graphing-the-data" class="section level3 hasAnchor" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Performing a One-Factor Analysis of Variance (ANOVA) &amp; Graphing the data<a href="one-way-anova.html#performing-a-one-factor-analysis-of-variance-anova-graphing-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr />
+<p>First, let’s open the relevant data file. <a href="https://moodle.stfx.ca/mod/resource/view.php?id=901719">Here</a> is the link. The file is called “Jamesetal2015_Experiment 2_Edited.omv”. Open this file in JAMOVI. Your data should look like this:</p>
+<p><img src="img/DataFileLooksLikeThis.png" /><!-- --></p>
+<p>In this experiment, there was one important independent variable, called <code>Condition</code>, and it has four levels. In the variable attribute’s information, we see the levels are 1, 2, 3, and 4. These will correspond to the four levels in shown below (and these labels are shown in the data spreadsheet):</p>
+<ol style="list-style-type: decimal">
+<li>No-Task Control</li>
+<li>Reactivation + Tetris</li>
+<li>Tetris Only</li>
+<li>Reactivation Only</li>
+</ol>
+<p>The dependent variable is recorded in the column <code>Days_One_to_Seven_Number_of_Intrusions</code>. This represents the mean number of intrusions for that week. We are testing the hypothesis that the number of intrusive memories will be different among the groups (1-4). For now, we will not specify which group we think is going to have the highest or lowest number of memories, but rather we will test if there is a difference SOMEWHERE between these 4 groups.</p>
+<p>Let’s begin. Go to <span style="color:blue">Analyses</span>, then <span style="color:blue">ANOVA</span>, then select <span style="color:blue">One-Way ANOVA…</span></p>
+<p><img src="img/OneWayANOVACommands.png" /><!-- --></p>
+<p>Look at the the One-Way ANOVA commands panel on the left. Here, you will specify the dependent variable (by moving the variable <code>Days_One_to_Seven_Number_of_Intrusions</code> from the list of variables on the left to the field to the right labeled “Dependent Variables”) and the factor, which is the same thing as the independent variable or grouping variable as you may remember from your experience with the <em>t</em>-tests (by moving the variable <code>Condition</code> from the variable list into the field labeled “Grouping Variable” on the right). Your window should look like this:</p>
+<p><img src="img/OneWayANOVACommandsWithVariablesSelected.png" /><!-- --></p>
+<p>Now, consider the default setting for other commands and whether we might need more information. Under <strong>Additional Statistics</strong>, we could click the <span style="color:blue">Descriptives table</span> and <span style="color:blue"> Descriptives plots</span>.</p>
+<p><img src="img/OneWayANOVACommandsWithDescriptiveStatsSelected.png" /><!-- --></p>
+<p>In the Results panel, JAMOVI will produce some output depicting the descriptive statistics and an associated graph.</p>
+<p><img src="img/OneWayANOVAResultsDescriptiveTable.png" /><!-- --></p>
+<p><img src="img/OneWayANOVAResultsDescriptivePlot.png" /><!-- --></p>
+<p>Although the titles of the conditions on the x-axis are not easy to read, the graph can be helpful. Remember that we looked at the four conditions (1 = No-Task Control, 2 = Reactivation+Tetris, 3 = Tetris Only, and 4 = Reactivation Only).</p>
+<p>Then, under <strong>Variances</strong>, we could click <span style="color:blue">Assume equal (Fisher’s)</span> just in case we believe the assumption of homogeneity of variance is upheld. With that assumption in mind, under <strong>Assumption Checks</strong>, we should also select <span style="color:blue">Homogeneity test</span>. You might also request <span style="color:blue">Normality test (Fisher’s)</span>; however, you might not make this selection if you already checked the data set to see if it met this assumption.</p>
+<p><img src="img/OneWayANOVACommandsWithAssumptionChecksAndVariance.png" /><!-- --></p>
+<p>In the Results panel, JAMOVI will produce some output depicting the results of the ANOVA (an ANOVA table) and the results of the assumption checking tests. The Assumption Checks will appear after the Descriptives Table, but before the Plots. That output should look something like this:</p>
+<p><img src="img/OneWayANOVAResultsAssumptionChecks.png" /><!-- --></p>
+<p>Levene’s test is significant (<em>p</em> &lt;.05) suggesting that there is a violation of the assumption of homogeneity of variance. In other words, we cannot assume equal variances. Remember that this interpretation of Levene’s test only tells us how to proceed when interpreting the results of the ANOVA. It tells us if we should report the ANOVA using Welch’s adjustment (unequal variances among groups; heterogeneity of variance) or if we could report Fisher’s statistic (equal variances among groups; homogeneity of variance).</p>
+<p>Above the the Assumption Checks and the Group Descriptives table are the results of the One-Way ANOVA. Let’s look at this table.</p>
+<p><img src="img/OneWayANOVAResultsANOVATable.png" /><!-- --></p>
+<p>Because Levene’s test is significant, we should report the ANOVA with Welch’s adjustment.</p>
+<p><img src="img/OneWayANOVAResultsANOVATableReadingWelchs.png" /><!-- --></p>
+<p>We see our <em>F</em>-statistic listed is 6.0824, with a <em>p</em>-value of .0019. This tests the null hypothesis that there is no difference among the groups. Since <em>p</em> is less than our likely alpha level (.05), we can reject the null hypothesis and conclude that there IS a difference somewhere among these groups. We may say it more formally as follows:</p>
+<p>The effect of condition on mean intrusive memories over days 1-7 was significant, <em>F</em>(3, 35.75) = 6.08, <em>p</em> &lt; .05.</p>
+<div id="some-apa-formatting-reminders-for-writing-results-sections" class="section level4 hasAnchor" number="1.3.3.1">
+<h4><span class="header-section-number">1.3.3.1</span> Some APA formatting reminders for writing results sections<a href="one-way-anova.html#some-apa-formatting-reminders-for-writing-results-sections" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><p>Always note the name of the test you performed (in this case, one-way analysis of variance, or ANOVA) and whether the result is significant or non-significant <em>(<strong>Note</strong>: We do not use the word insignificant.)</em>.</p></li>
+<li><p>We usually round to two decimal places, except for <em>p</em>-values. If your <em>p</em>-value was .0001, it would be okay to write <em>p</em> = .0001 or <em>p</em> &lt; .001.</p></li>
+<li><p>Do not include a leading 0 before the decimal for the <em>p</em>-value (<em>p</em> = .001 not <em>p</em> = 0.001, or <em>p</em> &lt; .05 not <em>p</em> &lt; 0.05).</p></li>
+</ol>
+<div class="marginnote">
+<p>Yes, I’m serious. No, I don’t know why. Yes, it does seem a bit silly. Yes, you lose points if you don’t adhere to APA format when requested to do so.</p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Pay attention to spaces, parentheses, etc. APA is very picky about that. For example, it’s <em>F</em>(3, 35.75) = 6.08 <strong>not</strong> <em>F</em>(3,35.75)=6.08. There are spaces on either side of =, &gt;, or &lt; symbols.</p></li>
+<li><p>Italicize symbols such as <em>M</em>, <em>SD</em>, <em>p</em>, <em>t</em>, <em>d</em>, and <em>F</em>.</p></li>
+</ol>
+<p>Had Levene’s test been non-significant, we might have reported Fisher’s statistic.</p>
+<p><img src="img/OneWayANOVAResultsANOVATableReadingFishers.png" /><!-- --></p>
+<p>In that row of the One-Way ANOVA results table, we see our <em>F</em>-statistic listed is 3.7948, with a <em>p</em>-value of .014. Since <em>p</em> is less than our likely alpha level (.05), we would have rejected the null hypothesis and concluded that there IS a difference somewhere among these groups. We might have said it more formally as follows:</p>
+<p>The effect of condition on mean intrusive memories over days 1-7 was significant, <em>F</em>(3, 68) = 3.80, <em>p</em> &lt; .05.</p>
+<p>To examine the data further, let’s refer to the graph created by JAMOVI:</p>
+<p><img src="img/OneWayANOVAResultsDescriptivePlot.png" /><!-- --></p>
+<p>Remember 1 = No-Task Control, 2 = Reactivation+Tetris, 3 = Tetris Only, and 4 = Reactivation Only.</p>
+<p>Alternatively, you could request an appropriate graph for these means in JAMOVI. Recall that a line graph would be useful if the variable represented on the <em>x</em>-axis (the independent variable) was measured using a quasi-interval, an interval or a ratio scale; a bar graph would be appropriate if that variable was measured using a nominal or ordinal scale.</p>
+<p>Also, recall that when you looked at descriptive statistics for your data set, you can easily add options to view <strong>Plots</strong>. Plots can be considered synonymous with graphs. To get these plots, click <span style="color:blue">Analyses</span>, <span style="color:blue">Exploration</span>, and <span style="color:blue">Descriptives</span>. Move the dependent variable to the “Variables” field and the independent variable to the “Split by” field. Under the <strong>Plots</strong> ribbon, select the appropriate graph. For the current example, select <span style="color:blue">Bar plot</span>.</p>
+<p><img src="img/BarGraphCommands.png" /><!-- --></p>
+<p>The resulting graph is much easier to read.</p>
+<p><img src="img/ResultingBarGraph.png" /><!-- --></p>
+<p>We can see that the Reactivation + Tetris condition appears to have the smallest mean. As for the others, they are all greater than Reactivation + Tetris, but differ somewhat from each other as well. It is important to know that at this point, we do not know where the significant differences could be. For example, it could be that Reactivation + Tetris is different from only No-Task Control, or it could be that it is different from other groups as well. In order to locate where the differences are, we must conduct additional analyses called either planned or unplanned comparisons (in the next lab).</p>
+</div>
+<div id="other-commands-used-to-conduct-the-one-way-anova-in-jamovi-anova" class="section level4 hasAnchor" number="1.3.3.2">
+<h4><span class="header-section-number">1.3.3.2</span> Other Commands Used to Conduct the One-Way ANOVA in JAMOVI: ANOVA<a href="one-way-anova.html#other-commands-used-to-conduct-the-one-way-anova-in-jamovi-anova" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Oftentimes, there is more than one way to accomplish a similar task using JAMOVI. We have examined how to conduct an ANOVA using the <span style="color:blue">Analyses</span> → <span style="color:blue">ANOVA</span> → <span style="color:blue">One-Way ANOVA</span> commands. Using the same example, let’s look at another set of commands to request an ANOVA.</p>
+<p>Click on <span style="color:blue">Analyses</span>, <span style="color:blue"> ANOVA</span>, and then <span style="color:blue">ANOVA</span>.</p>
+<p><img src="img/ANOVACommands.png" /><!-- --></p>
+<p>Place the dependent variable (<code>Days_One_to_Seven_Number_of_Intrusions</code>) in its appropriate field – in the “Dependent List” field. Then, place <code>Condition</code> into the “Fixed Factor(s)” field.</p>
+<p><img src="img/ANOVACommandsWithVariablesSelected.png" /><!-- --></p>
+<p>Under the “Assumption Checks” ribbon, you could request <span style="color:blue"> Homogeneity test</span>. You could also request <span style="color:blue"> Normality test</span>; however, if you have previously checked the data to see if it met the assumption of normality, you would not need to do so here again.</p>
+<p><img src="img/ANOVACommandsWithAssumptionChecksAndVariance.png" /><!-- --></p>
+<p>JAMOVI should generate three output tables in the output file. Let’s focus on the homogeneity test first. As we noticed when using the other set of commands, you should see that Levene’s test is significant.</p>
+<p><img src="img/ANOVAResultsAssumptionChecks.png" /><!-- --></p>
+<p>Based on that significant result, we would prefer to use an ANOVA with Welch’s adjustment (robust ANOVA). Recall that adjustment can be requested using the other set of commands (<span style="color:blue">Analyses</span> → <span style="color:blue">ANOVA</span> → <span style="color:blue">One-Way ANOVA</span>), and by default, the adjustment we might use was selected (Welch’s). The selection reads as <span style="color:blue">Don’t assume equal (Welch’s)</span>. This robust ANOVA is not available to using the current menu options (<span style="color:blue">Analyses</span> → <span style="color:blue">ANOVA</span> → <span style="color:blue">ANOVA</span>). That is a drawback to this set of commands. This is to say that this set of commands is only useful when homogeneity of variances can be assumed.</p>
+<p>Although we did not get to request the test both with and without the adjustment using this second set of commands (<span style="color:blue">Analyses</span> → <span style="color:blue">ANOVA</span> → <span style="color:blue"> ANOVA</span>), we can compare and contrast the regular overall ANOVA tests. While the table generated using these commands is slightly different from the ANOVA table generated using the other commands, you should notice the degrees of freedom, the <em>F</em>-statistic, and the <em>p</em>-value are the same in this table as they were for the row reporting Fisher’s statistic in the table generated with the other set of commands.</p>
+<p>In the Results pane, you should see this ANOVA table:
+<img src="img/ANOVAResultsANOVATable.png" /><!-- --></p>
+<p>Let’s compare the values found in it to the values found in the table we generated with the other set of commands.</p>
+<p><img src="img/ANOVAResultsANOVATable_StatsHighlighted.png" /><!-- --></p>
+<p><img src="img/OneWayANOVAResultsANOVATable_StatsHighlighted.png" /><!-- -->
+Both tables report the same statistics.</p>
+</div>
+</div>
+<div id="homework" class="section level3 hasAnchor" number="1.3.4">
+<h3><span class="header-section-number">1.3.4</span> Homework<a href="one-way-anova.html#homework" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>See <a href="https://moodle.stfx.ca/">Moodle</a>.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="followup-tests.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/CrumpLab/statisticsLab/01-ANOVA.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
