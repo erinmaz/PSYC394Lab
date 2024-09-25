@@ -7,7 +7,7 @@ data
 data-repository
 csv-format
 spss-format
-jamovi
+software-jamovi
 getting-started-with-jamovi
 installing-jamovi
 starting-jamovi-up
@@ -35,8 +35,7 @@ how-to-not-think-about-bad-memories-by-playing-tetris
 study-description
 study-methods
 important-stuff
-jamovi-1
-experiment-background
+jamovi
 checking-assumptions
 performing-a-one-factor-analysis-of-variance-anova-graphing-the-data
 some-apa-formatting-reminders-for-writing-results-sections
@@ -44,7 +43,7 @@ other-commands-used-to-conduct-the-one-way-anova-in-jamovi-anova
 homework
 followup-tests
 rationale-of-follow-up-tests
-jamovi-2
+jamovi-1
 unplanned-comparisons-method-1
 writing-the-results
 unplanned-comparisons-method-2
@@ -56,8 +55,8 @@ study-description-1
 study-methods-1
 lab-skills-learned
 important-stuff-1
-jamovi-3
-experiment-background-1
+jamovi-2
+experiment-background
 checking-assumptions-1
 conduct-and-graph-one-factor-repeated-measures-anova
 conduct-follow-up-tests
@@ -66,5 +65,3 @@ post-hoc-tests
 some-apa-formatting-reminders-for-writing-results-sections-1
 homework-2
 practice-problems
-software
-software-jamovi
