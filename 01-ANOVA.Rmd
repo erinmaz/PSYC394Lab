@@ -69,6 +69,7 @@ In this lab (and the next lab), we will use JAMOVI to:
 ### Checking Assumptions
 
 Recall that the ANOVA is a parametric test, and the ANOVA test assumes: 
+
 1. The sampling distributions are normally distributed. Consider the central limit theorem. 
 2. The data are measured using an interval or a ratio scale. Consider what you know about how the data were collected and/or look at the variable attributes in the JAMOVI data spreadsheet.
 3. The scores are independent. Consider the experimental design and/or look at the JAMOVI data spreadsheet to verify whether or not different participants or subjects contribute to the means.

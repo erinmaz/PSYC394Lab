@@ -1,7 +1,0 @@
-book_filename: "Statistics_Lab"
-repo: https://github.com/CrumpLab/PSYC394Lab
-edit: https://github.com/CrumpLab/PSYC394Lab/%s
-output_dir: "docs"
-language:
-  ui:
-    chapter_name: "Lab "
