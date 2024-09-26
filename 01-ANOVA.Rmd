@@ -148,9 +148,9 @@ Because Levene’s test is significant, we should report the ANOVA with Welch’
 knitr::include_graphics('img/OneWayANOVAResultsANOVATableReadingWelchs.png')
 ```
 
-We see our *F*-statistic listed is 6.0824, with a *p*-value of .0019. This tests the null hypothesis that there is no difference among the groups. Since *p* is less than our likely alpha level (.05), we can reject the null hypothesis and conclude that there IS a difference somewhere among these groups. We may say it more formally as follows:
+We see our *F*-statistic listed is 6.0824, with a *p*-value of .0019. This tests the null hypothesis that there is no difference among the groups. Since *p* is less than our likely alpha level (.05), we can reject the null hypothesis and conclude that there IS a difference somewhere among these groups. We may write this result in APA format as follows:
 
-The effect of condition on mean intrusive memories over days 1-7 was significant, *F*(3, 35.75) = 6.08, *p* < .05. 
+An ANOVA demonstrated that the effect of condition on mean intrusive memories over days 1-7 was significant, *F*(3, 35.75) = 6.08, *p* < .05. 
 
 Had Levene’s test been non-significant, we might have reported Fisher’s statistic. 
 
@@ -158,9 +158,9 @@ Had Levene’s test been non-significant, we might have reported Fisher’s stat
 knitr::include_graphics('img/OneWayANOVAResultsANOVATableReadingFishers.png')
 ```
 
-In that row of the One-Way ANOVA results table, we see our *F*-statistic listed is 3.7948, with a *p*-value of .014. Since *p* is less than our likely alpha level (.05), we would have rejected the null hypothesis and concluded that there IS a difference somewhere among these groups. We might have said it more formally as follows:
+In that row of the One-Way ANOVA results table, we see our *F*-statistic listed is 3.7948, with a *p*-value of .014. Since *p* is less than our likely alpha level (.05), we would have rejected the null hypothesis and concluded that there IS a difference somewhere among these groups. We may write this result in APA format as follows:
 
-The effect of condition on mean intrusive memories over days 1-7 was significant, *F*(3, 68) = 3.79, *p* < .05. 
+An ANOVA demonstrated that the effect of condition on mean intrusive memories over days 1-7 was significant, *F*(3, 68) = 3.79, *p* < .05. 
 
 To examine the data further, let's refer to the graph created by JAMOVI: 
 
