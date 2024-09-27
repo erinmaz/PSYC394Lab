@@ -150,7 +150,7 @@ knitr::include_graphics('img/OneWayANOVAResultsANOVATableReadingWelchs.png')
 
 We see our *F*-statistic listed is 6.0824, with a *p*-value of .0019. This tests the null hypothesis that there is no difference among the groups. Since *p* is less than our likely alpha level (.05), we can reject the null hypothesis and conclude that there IS a difference somewhere among these groups. We may write this result in APA format as follows:
 
-An ANOVA demonstrated that the effect of condition on mean intrusive memories over days 1-7 was significant, *F*(3, 35.75) = 6.08, *p* < .05. 
+An ANOVA with Welch's adjustment demonstrated that the effect of condition on mean intrusive memories over days 1-7 was significant, *F*(3, 35.75) = 6.08, *p* < .05. 
 
 Had Levene’s test been non-significant, we might have reported Fisher’s statistic. 
 
