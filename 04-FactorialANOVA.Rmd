@@ -1,0 +1,59 @@
+# Factorial ANOVA
+
+<script>
+$("#coverpic").hide();
+</script>
+
+
+## Pithy subtitle
+
+Text
+
+### Study description
+
+Text
+
+
+### Study Methods
+
+Text
+
+## Lab Skills Learned
+
+Text
+
+## Important Stuff
+
+Such as citations
+
+## JAMOVI
+
+<div class="marginnote">
+Where did we get this activity?
+</div>
+
+
+In this lab, we will use JAMOVI to:
+
+Text
+
+
+
+
+
+### Checking Assumptions
+
+
+
+
+### Conduct and graph ....
+
+
+
+### Homework
+
+See [Moodle](https://moodle.stfx.ca).
+
+
+### Practice Problems
+

@@ -65,3 +65,14 @@ post-hoc-tests
 some-apa-formatting-reminders-for-writing-results-sections-1
 homework-2
 practice-problems
+factorial-anova
+pithy-subtitle
+study-description-2
+study-methods-2
+lab-skills-learned-1
+important-stuff-2
+jamovi-3
+checking-assumptions-2
+conduct-and-graph-.
+homework-3
+practice-problems-1
