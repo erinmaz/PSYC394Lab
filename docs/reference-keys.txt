@@ -42,6 +42,7 @@ some-apa-formatting-reminders-for-writing-results-sections
 other-commands-used-to-conduct-the-one-way-anova-in-jamovi-anova
 homework
 followup-tests
+but-which-pairs-of-conditions-were-different
 rationale-of-follow-up-tests
 jamovi-1
 unplanned-comparisons-method-1
