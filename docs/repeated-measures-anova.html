@@ -217,7 +217,7 @@ However, perhaps the main point is that you are under no obligation to analyse v
 <p><strong>Finding from previous research:</strong> Prior research showed that typists do something funny. Skilled typists can type normal words very fast. This suggests they know how to locate all of the letters on the keyboard, and can press each letter very quickly to type words. That part isn’t particularly funny. However, if you take really skilled typists and make them type random letters like this: kwitb dhhgjtryq xkldpt mazhyffdt, guess what happens? They slow down a lot. It’s kind of weird that a typist would slow down, after all they can type letters really fast when they appear in words, but not when they appear in random orders…what gives? Last, it turns out that typists are kind of in the middle in terms of speed, if you ask them to type non-words that have similar properties to words, such as: quenp hamlke phwempy.</p>
 <p>To summarize, prior research showed that typing speed changes as a function of the structure of the text, roughly in this order from fastest to slowest.</p>
 <p>(FASTEST) Normal Words &lt; Word-like Non-words &lt; Random strings (SLOWEST)</p>
-<p><strong>Replication question:</strong> Behmer &amp; Crump also measured typists while they typed words, non-words that were English-like, and random strings. They had some additional things they were interested in, but for us, we are interested in whether they would show the same effect. Would they replicate the pattern: Normal words (Fastest) &lt; Word-like Non-words (medium) &lt;- Random strings (Slowest)?</p>
+<p><strong>Replication question:</strong> Behmer &amp; Crump also measured typists while they typed words, non-words that were English-like, and random strings. They had some additional things they were interested in, but for us, we are interested in whether they would show the same effect. Would they replicate the pattern: Normal words (Fastest) &lt; Word-like Non-words (medium) &lt; Random strings (Slowest)?</p>
 </div>
 <div id="study-methods-1" class="section level3 hasAnchor" number="3.1.2">
 <h3><span class="header-section-number">3.1.2</span> Study Methods<a href="repeated-measures-anova.html#study-methods-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -245,7 +245,6 @@ However, perhaps the main point is that you are under no obligation to analyse v
 </div>
 <div id="jamovi-2" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> JAMOVI<a href="repeated-measures-anova.html#jamovi-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<hr />
 <div class="marginnote">
 <p>This section is copied, almost verbatim, with some editorial changes, from <a href="https://www.erinmazerolle.com/statisticsLab/lab-8-repeated-measures-anova.html#spss-8">Answering questions with data: The lab manual for R, Excel, SPSS and JAMOVI, Lab 8, Section 8.6, SPSS</a>, according to its <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ast">CC license</a>. Thank you to Crump, Krishnan, Volz, &amp; Chavarga (2018).</p>
 </div>
@@ -256,8 +255,7 @@ However, perhaps the main point is that you are under no obligation to analyse v
 </ol>
 <div id="experiment-background" class="section level3 hasAnchor" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Experiment Background<a href="repeated-measures-anova.html#experiment-background" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<hr />
-<p>As described in more detail at the <a href="https://www.erinmazerolle.com/statisticsLab/lab-8-repeated-measures-anova.html#betcha-cant-type-jhdbzkco-very-fast-on-your-first-try">beginning of this lab manual section</a>, Behmer and Crump (2017) recruited 38 subjects to type words presented on a screen as quickly as they could. The independent variable was typing material and it had 3 levels: Normal (5 letter English words), Bigrams (5 letter non-words that have properties like real words), and Random (random 5 letter strings). The authors wanted to know whether reaction time (RT) was different according to the type of word being typed.</p>
+<p>As described in more detail at the beginning of this lab manual section, Behmer and Crump (2017) recruited 38 subjects to type words presented on a screen as quickly as they could. The independent variable was typing material and it had 3 levels: Normal (5 letter English words), Bigrams (5 letter non-words that have properties like real words), and Random (random 5 letter strings). The authors wanted to know whether reaction time (RT) was different according to the type of word being typed.</p>
 <p>Dependent Variables: There were three dependent variables, that all measured different aspects of typing performance. Reaction times (RTs) were defined as the temporal interval between seeing a stimulus (to type), and then starting to type it (first key press). Inter-keystroke intervals (IKSIs) are the times between each key-press. Last, accuracy was also measured (correct or incorrect key-presses). For this analysis we will use <code>Mean RTs</code> as our one DV.</p>
 <p>Nota bene: This is a repeated measures design because each participant typed letter strings from the Normal, Bigrams, and Random conditions.</p>
 </div>
@@ -273,7 +271,6 @@ However, perhaps the main point is that you are under no obligation to analyse v
 </div>
 <div id="conduct-and-graph-one-factor-repeated-measures-anova" class="section level3 hasAnchor" number="3.4.3">
 <h3><span class="header-section-number">3.4.3</span> Conduct and graph One-Factor Repeated Measures ANOVA<a href="repeated-measures-anova.html#conduct-and-graph-one-factor-repeated-measures-anova" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<hr />
 <p><a href="https://moodle.stfx.ca/mod/resource/view.php?id=926115">Here</a> is the link to the data set we will use; it’s called BehmerCrumpMeanRTs.omv. When you open the file, it should look like this:</p>
 <p><img src="img/BehmerCrump_FileView.png" /><!-- --></p>
 <p>Notice that this file contains means. Each person’s data is contained within a row: there are 3 measurements corresponding to all stimulus conditions. To calculate a One-Factor Repeated Measures ANOVA, go to <span style="color:blue">Analyses</span>, <span style="color:blue">ANOVA</span>, and then <span style="color:blue">Repeated Measures ANOVA</span>.</p>
@@ -300,7 +297,7 @@ However, perhaps the main point is that you are under no obligation to analyse v
 <p><img src="img/RM_ANOVA_MauchlysTestResults.png" /><!-- --></p>
 <p><img src="img/RM_ANOVA_Results_Simplified.png" /><!-- --></p>
 <p>Remember this is an omnibus ANOVA result. We do not know how many differences among means exist or between which means they would be found.</p>
-<p>In order to graph this data and look at the means, go to back into the analysis commands. Remember, you can do this by clicking on the results generated in the Results pane. The commands will appear on the left of your JAMOVI file. Now, scroll down to the “Estimated Marginal Means” ribbon. Move the factor (in our example, <code>Typing_Material_Condition</code>, to the Marginal Means window under “Term 1”. Then, under “Output”, select <span style="color:blue">Marginal means plot</span> and <span style="color:blue">Marginal means tables</span>.</p>
+<p>In order to graph this data and look at the means, go to back into the analysis commands. Remember, you can do this by clicking on the results generated in the Results pane. The commands will appear on the left of your JAMOVI file. Now, scroll down to the “Estimated Marginal Means” ribbon. Move the factor (in our example, <code>Typing_Material_Condition</code>) to the Marginal Means window under “Term 1”. Then, under “Output”, select <span style="color:blue">Marginal means plot</span> and <span style="color:blue">Marginal means tables</span>.</p>
 <p><img src="img/RM_ANOVA_Graph.png" /><!-- --></p>
 <p>In the Results pane, you should now see a graph and a table.</p>
 <p><img src="img/RM_ANOVA_GraphOfMeans_Results.png" /><!-- --></p>
@@ -325,14 +322,17 @@ We could go through the menus again to request the <em>post-hoc</em> tests, or w
 <p>If we wish to view and report the descriptive statistics, we could find the mean reaction times for each level (typing material condition), as well as the 95% confidence interval, in the “Estimated Marginal Means” table in the Results pane. This table does not give us the standard deviation, though. To get the standard deviations, use the commands with which you are familiar: <span style="color:blue">Analyses</span>, <span style="color:blue">Exploration</span>, and <span style="color:blue">Descriptives</span>.</p>
 <p><img src="img/RM_ANOVA_DescStats.png" /><!-- --></p>
 <p>To get the effect sizes, you will need to calculate Cohen’s <em>d</em>. An appropriate formula to use follows:</p>
-<p><img src="img/RM_ANOVA_Cohensd.png" /><!-- --></p>
-<p>We will need to calculate the effect size for each comparison we will report. Remember, there were three unique comparisons. We can take the mean difference from the “Post Hoc Comparisons” table or fill in each pair of means and take the difference.
-The calculation of effect size for the comparison between the Bigram and Normal conditions follows:</p>
-<p><img src="img/EffectSize_BigramsVsNormal.png" /><!-- --></p>
+<p><span class="math inline">\(\hat{d} = \displaystyle \frac{\overline{X}_{2} - \overline{X}_{1}}{S_1}\)</span></p>
+<p>We will need to calculate the effect size for each comparison we will report. Remember, there were three unique comparisons. We can take the mean difference from the “Post Hoc Comparisons” table or fill in each pair of means and take the difference.</p>
+<p>The calculation of effect size for the comparison between the Bigram and Normal conditions follows:</p>
+<p><span class="math inline">\(\hat{d} = \displaystyle \frac{431.99 - 365.76}{85.69}\)</span></p>
+<p><span class="math inline">\(\hat{d} = 0.77\)</span></p>
 <p>The calculation of effect size for the comparison between the Bigram and Random conditions follows:</p>
-<p><img src="img/EffectSize_BigramsVsRandom.png" /><!-- --></p>
-<p>The calculation of effect size for the comparison between the Normal and Normal conditions follows:</p>
-<p><img src="img/EffectSize_NormalVsRandom.png" /><!-- --></p>
+<p><span class="math inline">\(\hat{d} = \displaystyle \frac{431.99 - 596.23}{139.77}\)</span></p>
+<p><span class="math inline">\(\hat{d} = -1.18\)</span></p>
+<p>The calculation of effect size for the comparison between the Normal and Random conditions follows:</p>
+<p><span class="math inline">\(\hat{d} = \displaystyle \frac{365.76 - 596.23}{139.77}\)</span></p>
+<p><span class="math inline">\(\hat{d} = -1.65\)</span></p>
 <p>Based on the statistics presented in tables presented in this section, we would add to what we had already formally written about the omnibus ANOVA and construct a Results section something like this:</p>
 <p>A one-way repeated measures ANOVA was conducted, and Greenhouse-Geisser estimates of sphericity were used to correct the degrees of freedom (ε = .59) because Mauchly’s test indicated a violation to the assumption, <em>p</em> &lt; .05. The mean reaction times were significantly different among the types of stimulus, <em>F</em>(1.17, 43.46) = 420.33, <em>p</em> &lt; .0001. <em>Post-hoc</em> pairwise comparisons with Bonferroni corrections were performed. It was found that mean reaction time in the Bigram condition (<em>M</em> = 431.99, <em>SD</em> = 103.63, 95% CI [397.93, 466.05]) was significantly different from that in the Normal condition (<em>M</em> = 365.76, <em>SD</em> = 85.69, 95% CI [337.60, 393.93]), <em>p</em> &lt; .0001, <em>d</em> = 0.64, and the mean reaction time in the Bigram condition was also significantly different from that in the Random condition (<em>M</em> = 596.23, <em>SD</em> = 139.77, 95% CI [550.29, 642.29]), <em>p</em> &lt; .0001, <em>d</em> = -1.58. Furthermore, the mean reaction time in the Normal condition was significantly different from that in the Random condition, <em>p</em> &lt; .0001, <em>d</em> = -2.69.</p>
 </div>
@@ -359,8 +359,8 @@ The calculation of effect size for the comparison between the Bigram and Normal 
 <ol style="list-style-type: decimal">
 <li><p>In the lab demonstration, we saw that the assumption of sphericity was violated. Try changing data points until the assumption is upheld.</p></li>
 <li><p>In the lab demonstration, we saw that the assumption of sphericity was violated. Try changing data points until the assumption is upheld while aiming to minimize the changes you make overall.</p></li>
-<li><p>Use the Mean Accuracy Scores 2 <a href="https://moodle.stfx.ca/mod/resource/view.php?id=926491">data set</a> to practice checking assumptions and running a repeated measures ANOVA with follow-up testsing.</p></li>
-<li><p>When we discussed <em>t</em>-tests, we talked about the Mehr, Song, and Spelke (2016) study. Have a look at that <a href="https://moodle.stfx.ca/mod/resource/view.php?id=901715">data set</a>, and try to develop a research question that might be answered with a repeated measures ANOVA. (<em>Hint</em>: It is okay to use only the variable name, rather than the phrase for what was measured, in your research question.)</p></li>
+<li><p>Use the Mean Accuracy Scores 2 <a href="https://moodle.stfx.ca/mod/resource/view.php?id=1163430">data set</a> to practice checking assumptions and running a repeated measures ANOVA with follow-up testing.</p></li>
+<li><p>When we discussed <a href="https://moodle.stfx.ca/course/view.php?id=37944&amp;section=2"><em>t</em>-tests</a>, we talked about the Mehr, Song, and Spelke (2016) study. Have a look at that data set, and try to develop a research question that might be answered with a repeated measures ANOVA. (<em>Hint</em>: It is okay to use only the variable name, rather than the phrase for what was measured, in your research question.)</p></li>
 </ol>
 
 </div>
@@ -426,6 +426,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

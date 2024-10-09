@@ -25,7 +25,7 @@ To summarize, prior research showed that typing speed changes as a function of t
 
 (FASTEST)  Normal Words < Word-like Non-words < Random strings  (SLOWEST)
 
-**Replication question:** Behmer & Crump also measured typists while they typed words, non-words that were English-like, and random strings. They had some additional things they were interested in, but for us, we are interested in whether they would show the same effect. Would they replicate the pattern: Normal words (Fastest) < Word-like Non-words (medium) <- Random strings (Slowest)?
+**Replication question:** Behmer & Crump also measured typists while they typed words, non-words that were English-like, and random strings. They had some additional things they were interested in, but for us, we are interested in whether they would show the same effect. Would they replicate the pattern: Normal words (Fastest) < Word-like Non-words (medium) < Random strings (Slowest)?
 
 
 ### Study Methods
@@ -53,8 +53,6 @@ Reminder, this is a repeated measures design because each participant typed lett
 
 ## JAMOVI
 
----
-
 <div class="marginnote">
 This section is copied, almost verbatim, with some editorial changes, from [Answering questions with data: The lab manual for R, Excel, SPSS and JAMOVI, Lab 8, Section 8.6, SPSS](https://www.erinmazerolle.com/statisticsLab/lab-8-repeated-measures-anova.html#spss-8), according to its [CC license](https://creativecommons.org/licenses/by-sa/4.0/deed.ast). Thank you to Crump, Krishnan, Volz, & Chavarga (2018). 
 </div>
@@ -69,9 +67,7 @@ In this lab, we will use JAMOVI to:
 
 ### Experiment Background
 
----
-
-As described in more detail at the [beginning of this lab manual section](https://www.erinmazerolle.com/statisticsLab/lab-8-repeated-measures-anova.html#betcha-cant-type-jhdbzkco-very-fast-on-your-first-try), Behmer and Crump (2017) recruited 38 subjects to type words presented on a screen as quickly as they could. The independent variable was typing material and it had 3 levels: Normal (5 letter English words), Bigrams (5 letter non-words that have properties like real words), and Random (random 5 letter strings). The authors wanted to know whether reaction time (RT) was different according to the type of word being typed.
+As described in more detail at the beginning of this lab manual section, Behmer and Crump (2017) recruited 38 subjects to type words presented on a screen as quickly as they could. The independent variable was typing material and it had 3 levels: Normal (5 letter English words), Bigrams (5 letter non-words that have properties like real words), and Random (random 5 letter strings). The authors wanted to know whether reaction time (RT) was different according to the type of word being typed.
 
 Dependent Variables: There were three dependent variables, that all measured different aspects of typing performance. Reaction times (RTs) were defined as the temporal interval between seeing a stimulus (to type), and then starting to type it (first key press). Inter-keystroke intervals (IKSIs) are the times between each key-press. Last, accuracy was also measured (correct or incorrect key-presses). For this analysis we will use `Mean RTs` as our one DV.
 
@@ -92,8 +88,6 @@ Recall that the Repeated Measures ANOVA assumes:
 
 
 ### Conduct and graph One-Factor Repeated Measures ANOVA
-
----
 
 [Here](https://moodle.stfx.ca/mod/resource/view.php?id=926115) is the link to the data set we will use; it's called BehmerCrumpMeanRTs.omv. When you open the file, it should look like this:
 
@@ -174,7 +168,7 @@ knitr::include_graphics('img/RM_ANOVA_Results_Simplified.png')
 
 Remember this is an omnibus ANOVA result. We do not know how many differences among means exist or between which means they would be found.
 
-In order to graph this data and look at the means, go to back into the analysis commands. Remember, you can do this by clicking on the results generated in the Results pane. The commands will appear on the left of your JAMOVI file. Now, scroll down to the “Estimated Marginal Means” ribbon. Move the factor (in our example, `Typing_Material_Condition`, to the Marginal Means window under “Term 1”. Then, under “Output”, select <span style="color:blue">Marginal means plot</span> and <span style="color:blue">Marginal means tables</span>.
+In order to graph this data and look at the means, go to back into the analysis commands. Remember, you can do this by clicking on the results generated in the Results pane. The commands will appear on the left of your JAMOVI file. Now, scroll down to the “Estimated Marginal Means” ribbon. Move the factor (in our example, `Typing_Material_Condition`) to the Marginal Means window under “Term 1”. Then, under “Output”, select <span style="color:blue">Marginal means plot</span> and <span style="color:blue">Marginal means tables</span>.
 
 ```{r , echo=FALSE,dev='png'}
 knitr::include_graphics('img/RM_ANOVA_Graph.png')
@@ -227,28 +221,30 @@ knitr::include_graphics('img/RM_ANOVA_DescStats.png')
 
 To get the effect sizes, you will need to calculate Cohen’s *d*. An appropriate formula to use follows:
 
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/RM_ANOVA_Cohensd.png')
-```
+$\hat{d} = \displaystyle \frac{\overline{X}_{2} - \overline{X}_{1}}{S_1}$ 
 
 We will need to calculate the effect size for each comparison we will report. Remember, there were three unique comparisons. We can take the mean difference from the “Post Hoc Comparisons” table or fill in each pair of means and take the difference.
+
 The calculation of effect size for the comparison between the Bigram and Normal conditions follows:
 
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/EffectSize_BigramsVsNormal.png')
-```
+$\hat{d} = \displaystyle \frac{431.99 - 365.76}{85.69}$ 
+
+$\hat{d} = 0.77$ 
+
 
 The calculation of effect size for the comparison between the Bigram and Random conditions follows:
 
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/EffectSize_BigramsVsRandom.png')
-```
+$\hat{d} = \displaystyle \frac{431.99 - 596.23}{139.77}$ 
 
-The calculation of effect size for the comparison between the Normal and Normal conditions follows:
+$\hat{d} = -1.18$ 
 
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/EffectSize_NormalVsRandom.png')
-```
+
+The calculation of effect size for the comparison between the Normal and Random conditions follows:
+
+$\hat{d} = \displaystyle \frac{365.76 - 596.23}{139.77}$ 
+
+$\hat{d} = -1.65$ 
+
 
 Based on the statistics presented in tables presented in this section, we would add to what we had already formally written about the omnibus ANOVA and construct a Results section something like this:
 
@@ -282,7 +278,7 @@ See [Moodle](https://moodle.stfx.ca).
 
 2. In the lab demonstration, we saw that the assumption of sphericity was violated. Try changing data points until the assumption is upheld while aiming to minimize the changes you make overall.
 
-3. Use the Mean Accuracy Scores 2 [data set](https://moodle.stfx.ca/mod/resource/view.php?id=926491) to practice checking assumptions and running a repeated measures ANOVA with follow-up testsing.
+3. Use the Mean Accuracy Scores 2 [data set](https://moodle.stfx.ca/mod/resource/view.php?id=1163430) to practice checking assumptions and running a repeated measures ANOVA with follow-up testing.
 
-4. When we discussed *t*-tests, we talked about the Mehr, Song, and Spelke (2016) study. Have a look at that [data set](https://moodle.stfx.ca/mod/resource/view.php?id=901715), and try to develop a research question that might be answered with a repeated measures ANOVA. (*Hint*: It is okay to use only the variable name, rather than the phrase for what was measured, in your research question.)
+4. When we discussed [*t*-tests](https://moodle.stfx.ca/course/view.php?id=37944&section=2), we talked about the Mehr, Song, and Spelke (2016) study. Have a look at that data set, and try to develop a research question that might be answered with a repeated measures ANOVA. (*Hint*: It is okay to use only the variable name, rather than the phrase for what was measured, in your research question.)
 
