@@ -77,3 +77,10 @@ checking-assumptions-2
 conduct-and-graph-.
 homework-3
 practice-problems-1
+that-one-way-anova-is-not-a-distant-memory-rethinking-the-james-et-al.-2015-study
+performing-a-factorial-anova-graphing-the-data
+conduct-follow-up-tests-1
+planned-contrasts
+post-hoc-tests-1
+an-alternative-way-to-investigate-main-effects-and-interactions-linear-models
+writing-the-results-section
