@@ -52,9 +52,9 @@ After the seven days had passed, participants completed an Intrusion-Provocation
 
 ## Important Stuff
 - citation: James, E. L., Bonsall, M. B., Hoppitt, L., Tunbridge, E. M., Geddes, J. R., Milton, A. L., & Holmes, E. A. (2015). Computer game play reduces intrusive memories of experimental trauma via re-consolidation-update mechanisms. Psychological Science, 26, 1201-1215.
-- [Link to .pdf of article](http://journals.sagepub.com/stoken/default+domain/hQ2W4fbPrZVJ7eyNJaqu/full)
+- [Link to .pdf of article](pdfs/James2015.pdf)
 
-## JAMOVI
+## Conducting the Analyses
 
 <div class="marginnote">
 This section is copied almost verbatim, with some editorial changes, from [Answering questions with data: The lab manual for R, Excel, SPSS and JAMOVI, Lab 7, Section 7.6, SPSS](https://www.erinmazerolle.com/statisticsLab/lab-7-one-way-anova.html#spss-7), according to its [CC license](https://creativecommons.org/licenses/by-sa/4.0/deed.ast). Thank you to Crump, Krishnan, Volz, &   Chavarga (2018). 

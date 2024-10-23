@@ -35,7 +35,7 @@ how-to-not-think-about-bad-memories-by-playing-tetris
 study-description
 study-methods
 important-stuff
-jamovi
+conducting-the-analyses
 checking-assumptions
 performing-a-one-factor-analysis-of-variance-anova-graphing-the-data
 some-apa-formatting-reminders-for-writing-results-sections
@@ -43,8 +43,9 @@ other-commands-used-to-conduct-the-one-way-anova-in-jamovi-anova
 homework
 followup-tests
 but-which-pairs-of-conditions-were-different
+important-stuff-1
 rationale-of-follow-up-tests
-jamovi-1
+conducting-the-analyses-1
 unplanned-comparisons-method-1
 writing-the-results
 unplanned-comparisons-method-2
@@ -55,8 +56,8 @@ betcha-cant-type-jhdbzkco-very-fast-on-your-first-try
 study-description-1
 study-methods-1
 lab-skills-learned
-important-stuff-1
-jamovi-2
+important-stuff-2
+conducting-the-analyses-2
 experiment-background
 checking-assumptions-1
 conduct-and-graph-one-factor-repeated-measures-anova
@@ -70,8 +71,8 @@ factorial-anova
 that-one-way-anova-is-not-a-distant-memory-rethinking-the-james-et-al.-2015-study
 study-description-2
 lab-skills-learned-1
-important-stuff-2
-jamovi-3
+important-stuff-3
+conducting-the-analyses-3
 checking-assumptions-2
 performing-a-factorial-anova-graphing-the-data
 conduct-follow-up-tests-1

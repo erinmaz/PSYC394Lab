@@ -40,7 +40,7 @@ In this lab, we will use JAMOVI to:
 - citation: James, E. L., Bonsall, M. B., Hoppitt, L., Tunbridge, E. M., Geddes, J. R., Milton, A. L., & Holmes, E. A. (2015). Computer game play reduces intrusive memories of experimental trauma via re-consolidation-update mechanisms. Psychological Science, 26, 1201-1215.
 - [Link to .pdf of article](pdfs/James2015.pdf)
 
-## JAMOVI
+## Conducting the Analyses
 
 <div class="marginnote">
 This lab was created by Sherry Neville-MacLean with input from Amara Kohlert and Erin Mazerolle.

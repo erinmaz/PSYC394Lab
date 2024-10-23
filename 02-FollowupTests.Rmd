@@ -18,13 +18,18 @@ This lab is modified and extended from [Open Stats Labs](https://sites.trinity.e
 
 In this lab, we will continue our analysis of the James et al. (2015) dataset described in Lab #1.
 
+## Important Stuff
+- citation: James, E. L., Bonsall, M. B., Hoppitt, L., Tunbridge, E. M., Geddes, J. R., Milton, A. L., & Holmes, E. A. (2015). Computer game play reduces intrusive memories of experimental trauma via re-consolidation-update mechanisms. Psychological Science, 26, 1201-1215.
+- [Link to .pdf of article](pdfs/James2015.pdf)
+
+
 ## Rationale of Follow-Up Tests
 
 In practice, you know before conducting your experiment and analyses whether you have reason to look for specific differences (based on what the literature says, theories that exist, etc.) or you will explore the differences without reason to look at something specific (if you have a significant result in the omnibus ANOVA).  This differentiation will determine whether you will conduct orthogonal linear contrasts / planned comparisons (you had reasons to look for specific differences / *a priori* comparisons) or you will run a *post-hoc* test to explore the differences (you had no reason to look for any specific differences).  
 
 In lab, we are going to take both approaches with the same example just to discuss how to do each type of follow-up. You will **NOT** run conduct both planned comparisons and *post-hoc* tests in practice – EVER.  We are doing this for demonstration purposes only.
 
-## JAMOVI
+## Conducting the Analyses
 
 ### Unplanned Comparisons: Method 1
 

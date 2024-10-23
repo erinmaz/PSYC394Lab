@@ -51,7 +51,7 @@ Reminder, this is a repeated measures design because each participant typed lett
 - <a href="https://github.com/CrumpLab/statisticsLab/raw/master/data/exp1_BehmerCrumpAPP.csv" download>Data in .csv format</a>
 
 
-## JAMOVI
+## Conducting the Analyses
 
 <div class="marginnote">
 This section is copied, almost verbatim, with some editorial changes, from [Answering questions with data: The lab manual for R, Excel, SPSS and JAMOVI, Lab 8, Section 8.6, SPSS](https://www.erinmazerolle.com/statisticsLab/lab-8-repeated-measures-anova.html#spss-8), according to its [CC license](https://creativecommons.org/licenses/by-sa/4.0/deed.ast). Thank you to Crump, Krishnan, Volz, & Chavarga (2018). 
