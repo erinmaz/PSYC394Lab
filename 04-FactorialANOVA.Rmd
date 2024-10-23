@@ -313,7 +313,7 @@ We might report something like this:
 
 Although there is a non-significant main effect of reactivation of memories [*F*(1, 68) = 1.23, *p* > .05], there is a significant main effect of playing Tetris on number of provocation task intrusions [*F* (1, 68) = 9.13, *p* = .004]. Specifically, participants who did not undergo reactivation of memories (*M* = 3.25, *SD* = 2.63) did not experience a significantly different number of provocation task intrusions than those who did undergo reactivation of memories (*M* = 2.64, *SD* = 2.47). Participants who did play Tetris (*M* = 2.11, *SD* = 2.38), though, did experience significantly fewer provocation task intrusions than those who did not play Tetris (*M* = 3.78, *SD* = 2.49). 
 
-### Homework
+## Homework
 
 See [Moodle](https://moodle.stfx.ca).
 

@@ -231,7 +231,7 @@ While the convenience of a programmed contrast may be appealing, you should also
 
 Remember: It is a good idea to check your data set before deciding whether a menu and set of commands is helpful in a given case. 
 
-### Homework
+## Homework
 
 See [Moodle](https://moodle.stfx.ca/).
 

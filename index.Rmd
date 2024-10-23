@@ -66,6 +66,8 @@ Section 0.6 of Lab 0 was adapted nearly verbatim, with some editorial changes, f
 
 We have split this lab manual from the previous version which incorporated activities for both PSYC 292 and PSYC 394. This version focuses on PSYC 394 only.
 
+We have created a new activity for Factorial ANOVA.
+
 ### CC BY-SA 4.0 license
 
 This license means that you are free to:

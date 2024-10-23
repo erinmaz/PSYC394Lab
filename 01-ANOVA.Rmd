@@ -250,6 +250,6 @@ knitr::include_graphics('img/OneWayANOVAResultsANOVATable_StatsHighlighted.png')
 ```
 Both tables report the same statistics.
 
-### Homework
+## Homework
 
 See [Moodle](https://moodle.stfx.ca/).

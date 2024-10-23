@@ -267,12 +267,12 @@ Yes, I'm serious. No, I don't know why. Yes, it does seem a bit silly. Yes, you 
 5. Italicize symbols such as *M*, *SD*, *p*, *t*, *d*, and *F*.
 
 
-### Homework
+## Homework
 
 See [Moodle](https://moodle.stfx.ca).
 
 
-### Practice Problems
+## Practice Problems
 
 1. In the lab demonstration, we saw that the assumption of sphericity was violated. Try changing data points until the assumption is upheld.
 
