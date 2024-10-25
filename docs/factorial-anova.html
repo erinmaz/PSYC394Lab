@@ -242,7 +242,7 @@ $("#coverpic").hide();
 <li><p>The sampling distributions are normally distributed. Consider the central limit theorem.</p></li>
 <li><p>The data for the dependent variable are measured using an interval or a ratio scale. Consider what you know about how the data were collected and/or look at the variable attributes in the JAMOVI data spreadsheet.</p></li>
 <li><p>The scores in different groups are independent. Consider the experimental design and/or look at the JAMOVI data spreadsheet to verify whether or not different participants or subjects contribute to the means.</p></li>
-<li><p>The variances in the populations are roughly equal (homogeneity of variance). Consider the result of Levene’s test (H0: variances are equal; there is no difference in the variances among the means).</p></li>
+<li><p>The variances in the populations are roughly equal (homogeneity of variance). Consider the result of Levene’s test H<sub>0</sub>: variances are equal; there is no difference in the variances among the means).</p></li>
 </ol>
 <p>On your own: Check the data set to see if it meets the first three assumptions listed above. Run the <span style="color:blue">Analyses</span>, <span style="color:blue">Exploration</span>, and <span style="color:blue">Descriptives</span> command. What are your thoughts about whether the assumptions of the factorial ANOVA are met? (The idea is for you to integrate your skills learned in previous labs.) We will review how to check the fourth assumption together. Not unlike the ANOVAs you conducted in previous labs, this ANOVA will involve checking this latter assumption when requesting the analysis in JAMOVI.</p>
 </div>
@@ -254,7 +254,7 @@ $("#coverpic").hide();
 <p><img src="img/4.1b.png" /><!-- --></p>
 <p>Now, we can check to see if the fourth assumption, the assumption of homogeneity of variance, is upheld or violated. Consider the results of Levene’s test. <em>Consider this</em>: What does this result tell us about the assumption of equal variances?</p>
 <p><img src="img/4.2.png" /><!-- --></p>
-<p>Like any other null hypothesis significance test, we look to the <em>p</em>-value and compare it to our set alpha level. Since <em>p</em> &lt; .05 (our alpha level), we would fail to reject the null hypothesis. We have no reason to believe there are differences among the variances, i.e. the assumption of homogeneity is upheld. With this met assumption in mind, we would feel comfortable looking at and interpreting the results of an ANOVA without any adjustments. Stated another way, we are comfortable conducting and interpreting Fisher’s ANOVA.</p>
+<p>Like any other null hypothesis significance test, we look to the <em>p</em>-value and compare it to our set alpha level. Since <em>p</em> &gt; .05 (our alpha level), we would fail to reject the null hypothesis. We have no reason to believe there are differences among the variances, i.e. the assumption of homogeneity is upheld. With this met assumption in mind, we would feel comfortable looking at and interpreting the results of an ANOVA without any adjustments. Stated another way, we are comfortable conducting and interpreting Fisher’s ANOVA.</p>
 <p>When interpreting the results of the factorial ANOVA, we typically begin by looking at any possible interaction effects. Interaction effects are more interesting than main effects. When we say there is an interaction, we are saying the effects of one factor are dependent, or contingent, on the level of the other factor. To find interaction effects, we look to the rows where more than one factor is mentioned in a row and there is an asterisk mark between the names of the factors.</p>
 <p>Have a look at the ANOVA results table produced by JAMOVI:</p>
 <p><img src="img/4.3.interaction.png" /><!-- --></p>
@@ -275,7 +275,7 @@ $("#coverpic").hide();
 <p>At this point, we might adjust our formal write-up to indicate something to this effect:</p>
 <p>A 2 x 2 factorial ANOVA revealed that, although there is a non-significant main effect of reactivation of memories [<em>F</em>(1, 68) = 1.23, <em>p</em> &gt; .05], there is a significant main effect of playing Tetris on number of provocation task intrusions [<em>F</em> (1, 68) = 9.13, <em>p</em> = .004]. Of greater interest, however, there is significant interaction between reactivation of memories and playing Tetris on number of provocation task intrusions [<em>F</em> (1, 68) = 6.34, <em>p</em> = .014].</p>
 <p>Remember: An interaction simply informs us that the effects of at least one independent variable depend on the level of another independent variable. Whenever an interaction is detected, researchers need to conduct additional analyses to determine where that interaction is coming from.</p>
-<p>At this point, let’s have a look at a graph that can help us visualize what is happening with the means of each of the four groups based on the two independent variables. Recall that you can easily add options to results in the Results panel by clicking on the results of that analysis to highlight them, and then, making changes in the Analysis panel to the left. In the ANOVA analysis commands, you can add a graph. Plots can be considered synonymous with graphs. To get these plots, under the Estimated Marginal Means ribbon, highlight both factors and move them to the “Margin Means” field under Term 1. You will notice that, by default, the Marginal means plots are requested.</p>
+<p>At this point, let’s have a look at a graph that can help us visualize what is happening with the means of each of the four groups based on the two independent variables. Recall that you can easily add options to results in the Results panel by clicking on the results of that analysis to highlight them, and then, making changes in the Analysis panel to the left. In the ANOVA analysis commands, you can add a graph. Plots can be considered synonymous with graphs. To get these plots, under the Estimated Marginal Means ribbon, highlight both factors and move them to the “Marginal Means” field under Term 1. You will notice that, by default, the Marginal means plots are requested.</p>
 <p><img src="img/4.4.png" /><!-- --></p>
 <p>Is what you see in the plot, or graph, consistent with your interpretation of the potential interaction from the ANOVA table results in JAMOVI?</p>
 <p><img src="img/4.5.png" /><!-- --></p>
@@ -344,7 +344,7 @@ $("#coverpic").hide();
 </div>
 <div id="writing-the-results-section" class="section level3 hasAnchor" number="4.4.3">
 <h3><span class="header-section-number">4.4.3</span> Writing the Results Section<a href="factorial-anova.html#writing-the-results-section" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A 2 x 2 factorial ANOVA revealed that, although there is a non-significant main effect of reactivation of memories [<em>F</em>(1, 68) = 1.23, <em>p</em> &gt; .05], there is a significant main effect of playing Tetris on number of provocation task intrusions [<em>F</em> (1, 68) = 9.13, <em>p</em> = .004]. Of greater interest, however, there is significant interaction between reactivation of memories and playing Tetris on number of provocation task intrusions [<em>F</em> (1, 68) = 6.34, <em>p</em> = .014]. A simple effects analysis indicated that in the absence of reactivating memories, there is no significant effect of playing Tetris on number of provocation task intrusions [<em>F</em>(1, 68) = 0.13, <em>p</em> &gt; .05]; however, among those participants who were exposed to memory reactivation, there is a significant effect of playing Tetris on number of provocation task intrusions [<em>F</em>(1, 68) = 15.35, <em>p</em> &lt; .001]. Specifically, for participants who did not undergo memory reactivation, those who played Tetris (<em>M</em> = 3.11, <em>SD</em> = 2.52, 95% CI [2.01, 4.21]) did not experience a significantly higher number of provocation task intrusions than those who did not play Tetris (<em>M</em> = 3.39, <em>SD</em> = 2.81, 95% CI [2.29, 4.49]). For participants who did experience memory reactivation, though, those who played Tetris (<em>M</em> = 1.11, <em>SD</em> = 1.78, 95% CI [0.01, 2.21]) experienced significantly fewer provocation task intrusions than those who did not play Tetris (<em>M</em> = 4.17, <em>SD</em> = 2.12, 95% CI [3.07, 5.27]).</p>
+<p>A 2 x 2 factorial ANOVA revealed that, although there is a non-significant main effect of reactivation of memories [<em>F</em>(1, 68) = 1.23, <em>p</em> &gt; .05], there is a significant main effect of playing Tetris on number of provocation task intrusions [<em>F</em> (1, 68) = 9.13, <em>p</em> = .004]. Of greater interest, however, there is significant interaction between reactivation of memories and playing Tetris on number of provocation task intrusions [<em>F</em> (1, 68) = 6.34, <em>p</em> = .014]. A simple effects analysis indicated that in the absence of reactivating memories, there is no significant effect of playing Tetris on number of provocation task intrusions [<em>F</em>(1, 68) = 0.13, <em>p</em> &gt; .05]; however, among those participants who were exposed to memory reactivation, there is a significant effect of playing Tetris on number of provocation task intrusions [<em>F</em>(1, 68) = 15.35, <em>p</em> &lt; .001]. Specifically, for participants who did not undergo memory reactivation, those who played Tetris (<em>M</em> = 3.11, <em>SD</em> = 2.52, 95% CI [2.01, 4.21]) did not experience a significantly different number of provocation task intrusions than those who did not play Tetris (<em>M</em> = 3.39, <em>SD</em> = 2.81, 95% CI [2.29, 4.49]). For participants who did experience memory reactivation, though, those who played Tetris (<em>M</em> = 1.11, <em>SD</em> = 1.78, 95% CI [0.01, 2.21]) experienced significantly fewer provocation task intrusions than those who did not play Tetris (<em>M</em> = 4.17, <em>SD</em> = 2.12, 95% CI [3.07, 5.27]).</p>
 <p>For the sake of demonstration only, imagine we did not observe a significant interaction, but wanted to reported on the results of the main effects. We would need to use different means and associated standard deviations. In this case we have only two levels of each variable, so we might use the means and standard deviations from the Descriptives table. We will request two of those tables: one for means and standard deviations split by <code>Tetris</code> and one for means and standard deviations split by <code>Reactivation</code>.</p>
 <p><img src="img/4.23.png" /><!-- --></p>
 <p><img src="img/4.25.png" /><!-- --></p>
@@ -421,20 +421,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
