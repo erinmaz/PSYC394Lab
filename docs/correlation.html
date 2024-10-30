@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Lab 5 Correlation | Answering questions with data: Lab Manual</title>
+  <meta name="description" content="A lab manual for Psyc 394 at StFX" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Lab 5 Correlation | Answering questions with data: Lab Manual" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="A lab manual for Psyc 394 at StFX" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lab 5 Correlation | Answering questions with data: Lab Manual" />
+  
+  <meta name="twitter:description" content="A lab manual for Psyc 394 at StFX" />
+  
+
+<meta name="author" content="Matthew J. C. Crump, Anjali Krishnan, Stephen Volz, and Alla Chavarga" />
+<meta name="author" content="Adapted for PSYC 394, St. Francis Xavier University, by Erin L. Mazerolle and Sherry Neville-MacLean" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="factorial-anova.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79429674-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-79429674-4');
+</script>
+
+
+<script type="text/javascript">
+mattcrump=1;
+</script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="tufte.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i><b>0.1</b> Important notes</a>
+<ul>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#attributions-and-versions"><i class="fa fa-check"></i><b>0.1.1</b> Attributions and Versions</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.2</b> CC BY-SA 4.0 license</a></li>
+<li class="chapter" data-level="0.1.3" data-path="index.html"><a href="index.html#copying-the-lab-manual"><i class="fa fa-check"></i><b>0.1.3</b> Copying the lab manual</a></li>
+<li class="chapter" data-level="0.1.4" data-path="index.html"><a href="index.html#acknowledgments"><i class="fa fa-check"></i><b>0.1.4</b> Acknowledgments</a></li>
+</ul></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>0.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#data-repository"><i class="fa fa-check"></i><b>0.2.1</b> Data Repository</a></li>
+<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#csv-format"><i class="fa fa-check"></i><b>0.2.2</b> CSV format</a></li>
+<li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#spss-format"><i class="fa fa-check"></i><b>0.2.3</b> SPSS format</a></li>
+</ul></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#software-jamovi"><i class="fa fa-check"></i><b>0.3</b> Software: JAMOVI</a>
+<ul>
+<li class="chapter" data-level="0.3.1" data-path="index.html"><a href="index.html#getting-started-with-jamovi"><i class="fa fa-check"></i><b>0.3.1</b> Getting Started with jamovi</a></li>
+<li class="chapter" data-level="0.3.2" data-path="index.html"><a href="index.html#analyses"><i class="fa fa-check"></i><b>0.3.2</b> Analyses</a></li>
+<li class="chapter" data-level="0.3.3" data-path="index.html"><a href="index.html#the-spreadsheet"><i class="fa fa-check"></i><b>0.3.3</b> The Spreadsheet</a></li>
+<li class="chapter" data-level="0.3.4" data-path="index.html"><a href="index.html#loading-data-in-jamovi"><i class="fa fa-check"></i><b>0.3.4</b> Loading Data in jamovi</a></li>
+<li class="chapter" data-level="0.3.5" data-path="index.html"><a href="index.html#importing-unusual-data-files"><i class="fa fa-check"></i><b>0.3.5</b> Importing Unusual Data Files</a></li>
+<li class="chapter" data-level="0.3.6" data-path="index.html"><a href="index.html#changing-data-from-one-level-to-another"><i class="fa fa-check"></i><b>0.3.6</b> Changing Data from One Level to Another</a></li>
+<li class="chapter" data-level="0.3.7" data-path="index.html"><a href="index.html#installing-add-on-modules-into-jamovi"><i class="fa fa-check"></i><b>0.3.7</b> Installing Add-on Modules into jamovi</a></li>
+<li class="chapter" data-level="0.3.8" data-path="index.html"><a href="index.html#quitting-jamovi"><i class="fa fa-check"></i><b>0.3.8</b> Quitting jamovi</a></li>
+<li class="chapter" data-level="0.3.9" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>0.3.9</b> Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="one-way-anova.html"><a href="one-way-anova.html"><i class="fa fa-check"></i><b>1</b> One-way ANOVA</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="one-way-anova.html"><a href="one-way-anova.html#how-to-not-think-about-bad-memories-by-playing-tetris"><i class="fa fa-check"></i><b>1.1</b> How to not think about bad memories by playing Tetris</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="one-way-anova.html"><a href="one-way-anova.html#study-description"><i class="fa fa-check"></i><b>1.1.1</b> Study description</a></li>
+<li class="chapter" data-level="1.1.2" data-path="one-way-anova.html"><a href="one-way-anova.html#study-methods"><i class="fa fa-check"></i><b>1.1.2</b> Study Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="one-way-anova.html"><a href="one-way-anova.html#important-stuff"><i class="fa fa-check"></i><b>1.2</b> Important Stuff</a></li>
+<li class="chapter" data-level="1.3" data-path="one-way-anova.html"><a href="one-way-anova.html#conducting-the-analyses"><i class="fa fa-check"></i><b>1.3</b> Conducting the Analyses</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="one-way-anova.html"><a href="one-way-anova.html#checking-assumptions"><i class="fa fa-check"></i><b>1.3.1</b> Checking Assumptions</a></li>
+<li class="chapter" data-level="1.3.2" data-path="one-way-anova.html"><a href="one-way-anova.html#performing-a-one-factor-analysis-of-variance-anova-graphing-the-data"><i class="fa fa-check"></i><b>1.3.2</b> Performing a One-Factor Analysis of Variance (ANOVA) &amp; Graphing the data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="one-way-anova.html"><a href="one-way-anova.html#homework"><i class="fa fa-check"></i><b>1.4</b> Homework</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="followup-tests.html"><a href="followup-tests.html"><i class="fa fa-check"></i><b>2</b> Followup Tests</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="followup-tests.html"><a href="followup-tests.html#but-which-pairs-of-conditions-were-different"><i class="fa fa-check"></i><b>2.1</b> But which pairs of conditions were different?!?!</a></li>
+<li class="chapter" data-level="2.2" data-path="followup-tests.html"><a href="followup-tests.html#important-stuff-1"><i class="fa fa-check"></i><b>2.2</b> Important Stuff</a></li>
+<li class="chapter" data-level="2.3" data-path="followup-tests.html"><a href="followup-tests.html#rationale-of-follow-up-tests"><i class="fa fa-check"></i><b>2.3</b> Rationale of Follow-Up Tests</a></li>
+<li class="chapter" data-level="2.4" data-path="followup-tests.html"><a href="followup-tests.html#conducting-the-analyses-1"><i class="fa fa-check"></i><b>2.4</b> Conducting the Analyses</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="followup-tests.html"><a href="followup-tests.html#unplanned-comparisons-method-1"><i class="fa fa-check"></i><b>2.4.1</b> Unplanned Comparisons: Method 1</a></li>
+<li class="chapter" data-level="2.4.2" data-path="followup-tests.html"><a href="followup-tests.html#unplanned-comparisons-method-2"><i class="fa fa-check"></i><b>2.4.2</b> Unplanned Comparisons: Method 2</a></li>
+<li class="chapter" data-level="2.4.3" data-path="followup-tests.html"><a href="followup-tests.html#planned-comparisons"><i class="fa fa-check"></i><b>2.4.3</b> Planned Comparisons</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="followup-tests.html"><a href="followup-tests.html#homework-1"><i class="fa fa-check"></i><b>2.5</b> Homework</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>3</b> Repeated Measures ANOVA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#betcha-cant-type-jhdbzkco-very-fast-on-your-first-try"><i class="fa fa-check"></i><b>3.1</b> Betcha can’t type JHDBZKCO very fast on your first try</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#study-description-1"><i class="fa fa-check"></i><b>3.1.1</b> Study description</a></li>
+<li class="chapter" data-level="3.1.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#study-methods-1"><i class="fa fa-check"></i><b>3.1.2</b> Study Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#lab-skills-learned"><i class="fa fa-check"></i><b>3.2</b> Lab Skills Learned</a></li>
+<li class="chapter" data-level="3.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#important-stuff-2"><i class="fa fa-check"></i><b>3.3</b> Important Stuff</a></li>
+<li class="chapter" data-level="3.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#conducting-the-analyses-2"><i class="fa fa-check"></i><b>3.4</b> Conducting the Analyses</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#experiment-background"><i class="fa fa-check"></i><b>3.4.1</b> Experiment Background</a></li>
+<li class="chapter" data-level="3.4.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#checking-assumptions-1"><i class="fa fa-check"></i><b>3.4.2</b> Checking Assumptions</a></li>
+<li class="chapter" data-level="3.4.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#conduct-and-graph-one-factor-repeated-measures-anova"><i class="fa fa-check"></i><b>3.4.3</b> Conduct and graph One-Factor Repeated Measures ANOVA</a></li>
+<li class="chapter" data-level="3.4.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#conduct-follow-up-tests"><i class="fa fa-check"></i><b>3.4.4</b> Conduct follow-up tests</a></li>
+<li class="chapter" data-level="3.4.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#some-apa-formatting-reminders-for-writing-results-sections-1"><i class="fa fa-check"></i><b>3.4.5</b> Some APA formatting reminders for writing results sections</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#homework-2"><i class="fa fa-check"></i><b>3.5</b> Homework</a></li>
+<li class="chapter" data-level="3.6" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#practice-problems"><i class="fa fa-check"></i><b>3.6</b> Practice Problems</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>4</b> Factorial ANOVA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="factorial-anova.html"><a href="factorial-anova.html#that-one-way-anova-is-not-a-distant-memory-rethinking-the-james-et-al.-2015-study"><i class="fa fa-check"></i><b>4.1</b> That One-Way ANOVA is not a Distant Memory: Rethinking the James et al. (2015) Study</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="factorial-anova.html"><a href="factorial-anova.html#study-description-2"><i class="fa fa-check"></i><b>4.1.1</b> Study Description</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="factorial-anova.html"><a href="factorial-anova.html#lab-skills-learned-1"><i class="fa fa-check"></i><b>4.2</b> Lab Skills Learned</a></li>
+<li class="chapter" data-level="4.3" data-path="factorial-anova.html"><a href="factorial-anova.html#important-stuff-3"><i class="fa fa-check"></i><b>4.3</b> Important Stuff</a></li>
+<li class="chapter" data-level="4.4" data-path="factorial-anova.html"><a href="factorial-anova.html#conducting-the-analyses-3"><i class="fa fa-check"></i><b>4.4</b> Conducting the Analyses</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="factorial-anova.html"><a href="factorial-anova.html#checking-assumptions-2"><i class="fa fa-check"></i><b>4.4.1</b> Checking Assumptions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="factorial-anova.html"><a href="factorial-anova.html#performing-a-factorial-anova-graphing-the-data"><i class="fa fa-check"></i><b>4.4.2</b> Performing a Factorial ANOVA &amp; Graphing the Data</a></li>
+<li class="chapter" data-level="4.4.3" data-path="factorial-anova.html"><a href="factorial-anova.html#writing-the-results-section"><i class="fa fa-check"></i><b>4.4.3</b> Writing the Results Section</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="factorial-anova.html"><a href="factorial-anova.html#homework-3"><i class="fa fa-check"></i><b>4.5</b> Homework</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="correlation.html"><a href="correlation.html"><i class="fa fa-check"></i><b>5</b> Correlation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="correlation.html"><a href="correlation.html#lab-skills-learned-2"><i class="fa fa-check"></i><b>5.1</b> Lab Skills Learned</a></li>
+<li class="chapter" data-level="5.2" data-path="correlation.html"><a href="correlation.html#important-stuff-4"><i class="fa fa-check"></i><b>5.2</b> Important Stuff</a></li>
+<li class="chapter" data-level="5.3" data-path="correlation.html"><a href="correlation.html#background-and-pre-lab-tasks"><i class="fa fa-check"></i><b>5.3</b> Background and pre-lab tasks</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="correlation.html"><a href="correlation.html#assumptions-of-correlation"><i class="fa fa-check"></i><b>5.3.1</b> Assumptions of correlation</a></li>
+<li class="chapter" data-level="5.3.2" data-path="correlation.html"><a href="correlation.html#install-scatr-module-if-required"><i class="fa fa-check"></i><b>5.3.2</b> Install scatr module if required</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="correlation.html"><a href="correlation.html#conducting-the-analyses-4"><i class="fa fa-check"></i><b>5.4</b> Conducting the Analyses</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="correlation.html"><a href="correlation.html#dataset-the-big-five"><i class="fa fa-check"></i><b>5.4.1</b> Dataset: The Big Five</a></li>
+<li class="chapter" data-level="5.4.2" data-path="correlation.html"><a href="correlation.html#correlation-coefficient-for-bivariate-data"><i class="fa fa-check"></i><b>5.4.2</b> Correlation Coefficient for Bivariate Data</a></li>
+<li class="chapter" data-level="5.4.3" data-path="correlation.html"><a href="correlation.html#correlation-matrix"><i class="fa fa-check"></i><b>5.4.3</b> Correlation Matrix</a></li>
+<li class="chapter" data-level="5.4.4" data-path="correlation.html"><a href="correlation.html#apa-format-reporting-of-a-correlation"><i class="fa fa-check"></i><b>5.4.4</b> APA format reporting of a correlation</a></li>
+<li class="chapter" data-level="5.4.5" data-path="correlation.html"><a href="correlation.html#correlation-and-scatterplots"><i class="fa fa-check"></i><b>5.4.5</b> Correlation and Scatterplots</a></li>
+<li class="chapter" data-level="5.4.6" data-path="correlation.html"><a href="correlation.html#optional-activities"><i class="fa fa-check"></i><b>5.4.6</b> Optional activities</a></li>
+<li class="chapter" data-level="5.4.7" data-path="correlation.html"><a href="correlation.html#example-answers-to-optional-activities"><i class="fa fa-check"></i><b>5.4.7</b> Example answers to optional activities</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="correlation.html"><a href="correlation.html#homework-4"><i class="fa fa-check"></i><b>5.5</b> Homework</a></li>
+<li class="chapter" data-level="5.6" data-path="correlation.html"><a href="correlation.html#practice-problems-1"><i class="fa fa-check"></i><b>5.6</b> Practice Problems</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Answering questions with data: Lab Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<img src="LabmanualCover.png" id="coverpic" width="350" style="display: block; margin: auto;" />
+<div id="correlation" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Lab 5</span> Correlation<a href="correlation.html#correlation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<script>
+$("#coverpic").hide();
+</script>
+<p><span class="newthought">
+If … we choose a group of social phenomena with no antecedent knowledge of the causation or absence of causation among them, then the calculation of correlation coefficients, total or partial, will not advance us a step toward evaluating the importance of the causes at work.
+-Sir Ronald Fisher
+</span></p>
+<div class="marginnote">
+<p>Some of this section is copied almost verbatim, with some editorial changes, from <a href="https://www.crumplab.com/statisticsLab/lab-3-correlation.html#spss-3">Answering questions with data: The lab manual for R, Excel, SPSS and JAMOVI, Lab 3, Section 3.4, SPSS</a>, according to its <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ast">CC license</a>. Thank you to Crump, Krishnan, Volz, &amp; Chavarga (2018).</p>
+</div>
+<div id="lab-skills-learned-2" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Lab Skills Learned<a href="correlation.html#lab-skills-learned-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this lab, we will use JAMOVI to calculate the correlation coefficient. We will focus on the most commonly used Pearson’s coefficient, <em>r</em>. We will learn how to:</p>
+<ol style="list-style-type: decimal">
+<li>Calculate the Pearson’s <em>r</em> correlation coefficient for bivariate data</li>
+<li>Produce a correlation matrix, reporting Pearson’s <em>r</em> for more than two variables at a time</li>
+<li>Produce a scatterplot</li>
+</ol>
+</div>
+<div id="important-stuff-4" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Important Stuff<a href="correlation.html#important-stuff-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>citation: Dolan, C. V., Oort, F. J., Stoel, R. D., &amp; Wicherts, J. M. (2009). Testing measurement invariance in the target rotated multigroup exploratory factor model. Structural Equation Modeling, 16(2), 295–314. <a href="https://doi.org/10.1080/10705510902751416" class="uri">https://doi.org/10.1080/10705510902751416</a></p></li>
+<li><p><a href="https://www.tandfonline.com/doi/full/10.1080/10705510902751416#d1e246">link to article</a></p></li>
+</ul>
+</div>
+<div id="background-and-pre-lab-tasks" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Background and pre-lab tasks<a href="correlation.html#background-and-pre-lab-tasks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="assumptions-of-correlation" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Assumptions of correlation<a href="correlation.html#assumptions-of-correlation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This lab will focus on Pearson’s correlation. For the calculation to make sense, the data must meet certain criteria. These are known as the assumptions of Pearson’s correlation.</p>
+<p>Pearson’s correlation assumes:</p>
+<ol style="list-style-type: decimal">
+<li>Interval or ratio data (both variables)</li>
+<li>Related pairs</li>
+<li>No outliers</li>
+<li>Linearity of relationship</li>
+</ol>
+</div>
+<div id="install-scatr-module-if-required" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Install scatr module if required<a href="correlation.html#install-scatr-module-if-required" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As you read through this section on using JAMOVI to conduct correlations, you will see the need for the scatr module. The scatr module may be installed on your version of JAMOVI by default. If so, you should see it loaded under the <span style="color:blue">Analyses</span> -&gt;and <span style="color:blue">Exploration</span> -&gt; menus:</p>
+<p><img src="img/CheckingForSCATRModule_Highlighting.png" /><!-- --></p>
+<p>If you do not see this module on your version of JAMOVI, before lab, please download and install it using the add-on Modules icon (the plus sign at the top right) and JAMOVI library; due to the short duration of our labs, we will not have time during lab to wait for downloading and installation.</p>
+</div>
+</div>
+<div id="conducting-the-analyses-4" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Conducting the Analyses<a href="correlation.html#conducting-the-analyses-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="dataset-the-big-five" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Dataset: The Big Five<a href="correlation.html#dataset-the-big-five" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For the purpose of the lab demonstration, we will work with a data set provided by Dolan, Oort, Stoel, and Wicherts (2009) in their investigation of measurement invariance. These data were collected from 500 psychology students at University of Amsterdam on the Big Five personality dimensions [Neuroticism (N), Extraversion (E), Openness to experience (O), Agreeableness (A), and Conscientiousness (C)] using the NEO-PI-R test . You can download the data on <a href="https://moodle.stfx.ca">Moodle</a>.</p>
+</div>
+<div id="correlation-coefficient-for-bivariate-data" class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> Correlation Coefficient for Bivariate Data<a href="correlation.html#correlation-coefficient-for-bivariate-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bivariate is a fancy way of saying two variables. Let’s say you were interested in the relationship between two variables: <code>Neuroticism</code> and <code>Conscientiousness</code>. To calculate a correlation in JAMOVI, go to <span style="color:blue">Analyses</span> -&gt; <span style="color:blue">Regression</span> -&gt; <span style="color:blue">Correlation Matrix</span>:</p>
+<p><img src="img/CorrelationCommands.png" /><!-- --></p>
+<p><br></p>
+<p>Move your variables of interest, <code>Neuroticism</code> and <code>Conscientiousness</code>, to the window on the right of the commands pane:</p>
+<p><img src="img/Correlation_Variables.png" /><!-- --></p>
+<p><br></p>
+<p>An output table will be generated in the results panel:</p>
+<p><img src="img/Correlation_Output.png" /><!-- --></p>
+<p><br></p>
+<p>The table indicates that Pearson’s <em>r</em> between the two variables is -0.37, with a <em>p</em>-value of less than .001. This is a negative correlation: as the scores on one variable increase, the scores on the other variable decrease.</p>
+<p>Notice the number of other options you might select in the commands pane. You could select <span style="color:blue"> Spearman</span> or <span style="color:blue">Kendall’s tau-b</span> correlations. These tests can be useful if the data are measured on an ordinal scale or if there are outliers. Also, notice the options to request that JAMOVI <span style="color:blue">flag significant correlations</span> and to request the 95% confidence intervals. By default, the hypothesis is set as <span style="color:blue">Correlated</span> (a two-tailed hypothesis). You might change the default setting by selecting <span style="color:blue">Correlated positively</span> or <span style="color:blue">Correlated negatively</span> (both one-tailed hypotheses).</p>
+<p><img src="img/Correlation_ExtraCommands.png" /><!-- --></p>
+<p>Note that if you run a one-tailed test, you will get a different <em>p</em>-value than a two-tailed test. Why? Remember: The <em>p</em>-value is the probability of getting a test statistic (e.g., Pearson’s <em>r</em>) as or more extreme than the one you got, assuming the null hypothesis is true. In a two-tailed test, test statistics must be more extreme, compared to a one-tailed test. Imagine a test statistic at the green arrow:</p>
+<br>
+<div class="marginnote">
+<p>Figure modified from <a href="https://commons.wikimedia.org/wiki/File:Normalcurvesimple.png" class="uri">https://commons.wikimedia.org/wiki/File:Normalcurvesimple.png</a> according to its Creative Commons Attribution-Share Alike 3.0 Unported license.</p>
+</div>
+<p><img src="img/tails.png" /><!-- -->
+<br></p>
+<p>You would reject H<sub>0</sub> if you ran a one-tailed test, but not a two-tailed test. This is achieved by doubling the <em>p</em>-value for two-tailed tests.</p>
+<p><br></p>
+</div>
+<div id="correlation-matrix" class="section level3 hasAnchor" number="5.4.3">
+<h3><span class="header-section-number">5.4.3</span> Correlation Matrix<a href="correlation.html#correlation-matrix" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you have more than two variables in your spreadsheet and would like to evaluate correlations between several variables taken two at a time, you can enter multiple variables into the correlation window and obtain a correlation matrix. The correlation matrix is a table showing every possible bivariate correlation amongst a group of variables.</p>
+<p>Let’s add all five variables to our correlation matrix. First, move the variable to the right box:</p>
+<p><img src="img/Correlation2_Variables.png" /><!-- --></p>
+<p><br></p>
+<p>Now the output panel has 10 sets of results:</p>
+<p><img src="img/Correlation2_Output.png" /><!-- --></p>
+<p><br></p>
+<p>Note that some of the correlations are negative, and some are positive. Some are significant (with <em>p</em> &lt; .05), and some are not.</p>
+<p>If we request that JAMOVI flag the significant correlations, asterisks (*) will be used to show the significance levels against three commonly used alpha levels (One asterisk denotes <em>p</em> &lt; .05, two asterisks denote <em>p</em> &lt; .01, and three asterisks denote <em>p</em> &lt; .001.)</p>
+<p><img src="img/Correlation2_Output_SigFlag.png" /><!-- --></p>
+<p><br></p>
+</div>
+<div id="apa-format-reporting-of-a-correlation" class="section level3 hasAnchor" number="5.4.4">
+<h3><span class="header-section-number">5.4.4</span> APA format reporting of a correlation<a href="correlation.html#apa-format-reporting-of-a-correlation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Recall the output for the correlation between <code>Neuroticism</code> and <code>Conscientiousness</code>:</p>
+<p><img src="img/Correlation_Output.png" /><!-- --></p>
+<p><br></p>
+<p>You could write the results in APA format as follows:</p>
+<blockquote>
+<p>A significant correlation was found between Neuroticism and Conscientiousness, Pearson’s <em>r</em>(498) = -.37, <em>p</em> &lt; .001.</p>
+</blockquote>
+<p><br></p>
+<p>Note that we did not use a leading zero for <em>r</em> and we rounded to two decimal places.</p>
+<p>Now consider the example of the correlation between <code>Neuroticism</code> and <code>Openness</code>:</p>
+<p><img src="img/Correlation2_Output.png" /><!-- --></p>
+<p><br></p>
+<p>To report this result in APA format, you would write something such as:</p>
+<blockquote>
+<p>There was not a significant correlation between Neuroticism and Openness, Pearson’s <em>r</em>(498) = -.01, <em>p</em> &gt; .05.</p>
+</blockquote>
+<p><strong>Some formatting guidelines for writing results sections:</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Indicate the name of the test you performed (in this case, Pearson’s correlation) and whether the result is significant or non-significant (<em>Note: We do not use the word insignificant.</em>).</p></li>
+<li><p>We usually round to two decimal places, except for <em>p</em>-values. If your <em>p</em>-value was .0001, it would be okay to write <em>p</em> = .0001 or <em>p</em> &lt; .001.</p></li>
+<li><p>Do not include a leading 0 before the decimal for the <em>p</em>-value (<em>p</em> = .001 not <em>p</em> = 0.001, or <em>p</em> &lt; .05 not <em>p</em> &lt; 0.05) or for correlation coefficients, <em>r</em> (for example, <em>r</em>(df) = .56).</p></li>
+</ol>
+<div class="marginnote">
+<p>Yes, I’m serious. No, I don’t know why. Yes, it does seem a bit silly. Yes, you lose points if you don’t adhere to APA format when requested to do so.</p>
+</div>
+<ol start="4" style="list-style-type: lower-alpha">
+<li><p>Pay attention to spaces, parentheses, etc. APA is very picky about that. For example, it’s <em>t</em>(33.4) = -3.48 <strong>not</strong> <em>t</em>(33.4)=-3.48. There are spaces on either side of =, &gt;, or &lt; symbols.</p></li>
+<li><p>Italicize symbols such as <em>M</em>, <em>SD</em>, <em>p</em>, and <em>r</em>.</p></li>
+</ol>
+</div>
+<div id="correlation-and-scatterplots" class="section level3 hasAnchor" number="5.4.5">
+<h3><span class="header-section-number">5.4.5</span> Correlation and Scatterplots<a href="correlation.html#correlation-and-scatterplots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To accompany the calculation of the correlation coefficient, the scatterplot is the relevant graph. Depending on your version of JAMOVI, you may have the option to enable a correlation matrix plot from the correlation matrix commands panel. Let’s return to the first correlational analysis with only two variables, <code>Neuroticism</code> and <code>Conscientiousness</code>. Highlight those results in your Results pane, and click to add <span style="color:blue">Correlation matrix </span> under the “Plot.”</p>
+<p><img src="img/Correlation_CommandsWithPlot.png" /><!-- --></p>
+<p><br></p>
+<p>This will produce a scatterplot for the correlations.
+<img src="img/Correlation_Plot.png" /><!-- --></p>
+<p><br></p>
+<p>These plots are handy for having a quick look, but are relatively small. Furthermore, when there are a number of correlations requested, the labels or axes values may start to overlap resulting in a graph that is not easy to read. Consider this result generated when the plot is requested in the correlational analysis involving all five variables:</p>
+<p>This will produce a scatterplot for the correlations.
+<img src="img/Correlation2_Plot.png" /><!-- --></p>
+<p><br></p>
+<div id="getting-a-visual-of-the-correlation" class="section level4 hasAnchor" number="5.4.5.1">
+<h4><span class="header-section-number">5.4.5.1</span> Getting a visual of the correlation<a href="correlation.html#getting-a-visual-of-the-correlation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Let’s continue to create the scatterplot for this data, starting with the <code>Neuroticism</code> and <code>Conscientiousness</code> variables.</p>
+<p>Go to <span style="color:blue">Analyses</span>, then <span style="color:blue">Exploration</span>, and then <span style="color:blue">Scatterplot</span>.</p>
+<p><img src="img/Scatterplot_Commands.png" /><!-- --></p>
+<p><br></p>
+<p>Move <code>Neuroticism</code> into the X-Axis box and <code>Conscientiousness</code> into the Y-Axis box.</p>
+<p><img src="img/Scatterplot_Variables.png" /><!-- --></p>
+<p><br></p>
+<p>In the Results panel, JAMOVI will produce a scatterplot of your data, as follows:</p>
+<p><img src="img/Scatterplot_Output.png" /><!-- --></p>
+<p><br></p>
+<p>At this point, it would be equally correct to plot <code>Conscientiousness</code> on the <em>x</em>-axis and <code>Neuroticism</code> on the <em>y</em>-axis. Note that you get a different graph:</p>
+<p><img src="img/Scatterplot2_Output.png" /><!-- --></p>
+<p><br></p>
+<p>Let’s continue with the second scatterplot, with <code>Conscientiousness</code> on the <em>x</em>-axis and <code>Neuroticism</code> on the <em>y</em>-axis. You might keep this graph as it is, or you may choose to include a line through it. To add the line, select <span style="color:blue">Linear</span> under Regression Line. This line is known as the best fit line (or the line of best fit) because it minimizes the distance between the line and the data points.</p>
+<p><img src="img/Scatterplot2_Commands_Line.png" /><!-- --></p>
+<p><br></p>
+<p>You will find that the graph in your Results panel has now updated and has a line drawn on it.</p>
+<p><img src="img/Scatterplot2_Output_WithLine.png" /><!-- --></p>
+<p><br></p>
+<p>This best fit line goes from the upper top left to the bottom right; it has a negative slope. This is consistent with the negative Pearson’s <em>r</em> we found in the correlation matrix.</p>
+</div>
+</div>
+<div id="optional-activities" class="section level3 hasAnchor" number="5.4.6">
+<h3><span class="header-section-number">5.4.6</span> Optional activities<a href="correlation.html#optional-activities" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Consider a from Schroeder and Epley (2015) (available on <a href="https://moodle.stfx.ca">Moodle</a>).
+Rather than asking about a difference in how candidates were perceived by recruiters as the authors did, imagine you had a different research question: Is the age of the candidate correlated with intellect ratings? You could answer this using correlation. Click <span style="color:blue">Analyses</span>, <span style="color:blue">Regression</span>, and <span style="color:blue">Correlation Matrix</span>.</p>
+<p><img src="img/6.6.6.A.png" /><!-- --></p>
+<p><br></p>
+<p>Then, move <code>age</code> and <code>intellect</code> into the untitled box at the right of the pop-up screen:</p>
+<p><img src="img/6.6.6.B.png" /><!-- --></p>
+<p><br></p>
+<p>In the Results panel, the output table should look as follows:</p>
+<p><img src="img/6.6.6.C.png" /><!-- --></p>
+<p><br></p>
+<p>Write a sentence describing the results of this test. Compare your answer to #1 in the “Example answers to practice problems” below.</p>
+<p>Now, assume you are in the mood to do some exploratory data analysis. We can run multiple bivariate correlations at the same time in the same dialog. Click <span style="color:blue">Analyses</span>, then <span style="color:blue">Regression</span>, and then <span style="color:blue">Correlation Matrix</span> again. To the untitled variables box at the right, add <code>age</code>, <code>time</code>, <code>wordcount</code>, <code>intellect</code>, and <code>impression</code>:</p>
+<p><img src="img/6.6.6.D.png" /><!-- --></p>
+<p><br></p>
+<p>In the Results panel, the output table contains the <em>r</em>- and <em>p</em>-values for each possible pair of the five variables:</p>
+<p><img src="img/6.6.6.E.png" /><!-- --></p>
+<p><br></p>
+<p>By default, JAMOVI does not flag significant correlations. Be sure to review the <em>p</em>-values careful and compare them to the alpha level you set. How many significant correlations do you identify in the correlation matrix?</p>
+<p>If you would like JAMOVI to flag significant correlations, you can click <span style="color:blue">Flag significant correlations</span> under “Additional options”.</p>
+<p><img src="img/6.6.6.F.png" /><!-- --></p>
+<p><br></p>
+<p>As aforementioned, under the correlation matrix that appears in the Results panel, you will notice a note. If the <em>p</em>-value is under .05, JAMOVI will flag the correlation coefficient as * (significant at the .05 level); if the <em>p</em>-value is less than .01, JAMOVI will flag it as ** (significant at the .01 level); and if the <em>p</em>-value is less than .001, JAMOVI will flag it as *** (significant at the .001 level).</p>
+<p><img src="img/6.6.6.G.png" /><!-- --></p>
+<p><br></p>
+<p>Let’s pick a few pairs of variables and make scatterplots. We have a good range of different correlations in this table, so we can use these data to practice identifying correlations of different strengths. Click <span style="color:blue">Analyses</span>, <span style="color:blue">Exploration</span>, and then <span style="color:blue">Scatterplot…</span>. Move <code>intellect</code> into the Y-Axis field and <code>age</code> into the X-Axis field.</p>
+<p><img src="img/6.6.6.H.png" /><!-- --></p>
+<p><br></p>
+<p>These commands should produce a scatterplot in the Results panel.</p>
+<p><img src="img/6.6.6.I.png" /><!-- --></p>
+<p><br></p>
+<p>Repeat for all correlations with <code>intellect</code>, using <code>intellect</code> on the <em>y</em>-axis each time to make it easier to compare to the example answers below (#2). Compare the pattern of dots in each scatterplot to the <em>r</em>-values reported in the tables. Can you see the differences between the plots? Can you tell from the scatterplots whether we have violated any of the assumptions of Pearson’s <em>r</em> (i.e., linearity, no outliers)?</p>
+</div>
+<div id="example-answers-to-optional-activities" class="section level3 hasAnchor" number="5.4.7">
+<h3><span class="header-section-number">5.4.7</span> Example answers to optional activities<a href="correlation.html#example-answers-to-optional-activities" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li><p>Intellect ratings were not significantly correlated with the age of the candidates, Pearson’s <em>r</em>(32) = .05, <em>p</em> &gt; .05.</p></li>
+<li><p>You should have created four scatterplots. They are included below as well as some notes about each.</p></li>
+</ol>
+<p><img src="img/6.6.6.I.png" /><!-- -->
+For the correlation between <code>age</code> and <code>intellect</code>, we found Pearson’s <em>r</em> was very close to 0, at .05. This is reflected in the pattern of dots, which are spread fairly uniformly across the entire plot. There are no concerns with violating the assumption of linearity on this plot. There are also no outliers.</p>
+<p><img src="img/6.6.6.J.png" /><!-- -->
+For the correlation between <code>time</code> and <code>intellect</code>, we found Pearson’s <em>r</em> was also close to 0 but negative, at -.07. It is harder to link the <em>r</em> with the plot in this case because of the two dots far to the right in the plot. These might be outliers and could be investigated further. (Challenge yourself: Can you identify those cases that create the two dots off to the left? Are they outliers? How do you know? How would you deal with them if they are outliers? Why?)</p>
+<p><img src="img/6.6.6.K.png" /><!-- -->
+The correlation between <code>wordcount</code> and <code>intellect</code> was Pearson’s <em>r</em> = -.24. This is a fairly weak correlation. The dot to the far right in the first plot might be an outlier and could be investigated further. (Challenge yourself: Can you identify those cases that create the two dots off to the left? Are they outliers? How do you know? How would you deal with them if they are outliers? Why?) If you focus on the cluster of dots on the left, you can get the impression that there are more dots in the top left and bottom right than the other two quadrants.</p>
+<p>Next, let’s look at the scatterplot for <code>impression</code> and <code>intellect</code>.</p>
+<p><img src="img/6.6.6.L.png" /><!-- -->
+For <code>impression</code> and <code>intellect</code>, a correlation of Pearson’s <em>r</em> = .83 was observed. In the scatterplot, you can see the dots cluster around an imaginary line that goes from the bottom left corner to the top left corner. There are no concerns that the assumption of linearity has been violated. There is also no evidence of outliers.</p>
+</div>
+</div>
+<div id="homework-4" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Homework<a href="correlation.html#homework-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>See <a href="https://moodle.stfx.ca">Moodle</a>.</p>
+</div>
+<div id="practice-problems-1" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Practice Problems<a href="correlation.html#practice-problems-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="marginnote">
+<p>Questions 2-4 are copied verbatim from <a href="https://www.crumplab.com/statisticsLab/lab-3-correlation.html#writing-assignment-2">Answering questions with data: The lab manual for R, Excel, SPSS and JAMOVI, Lab 3, Section 3.2.4, SPSS</a>, according to its <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ast">CC license</a>. Thank you to Crump, Krishnan, Volz, &amp; Chavarga (2018).</p>
+</div>
+<ol style="list-style-type: decimal">
+<li><p>Check the data set used in the lab demonstration to see if it meets the assumptions of Pearson’s correlation. If not, indicate how you might “clean” the data. Justify your answer.</p></li>
+<li><p>Imagine a researcher found a positive correlation between two variables, and reported that the <em>r</em> value was +.3. One possibility is that there is a true correlation between these two variables. Discuss one alternative possibility that would also explain the observation of +.3 value between the variables.</p></li>
+<li><p>Explain the difference between a correlation of <em>r</em> = .3 and <em>r</em> = .7. What does a larger value of <em>r</em> represent?</p></li>
+<li><p>Explain the difference between a correlation of <em>r</em> = .5, and <em>r</em> = -.5.</p></li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="factorial-anova.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/CrumpLab/PSYC394Lab/05-Correlation.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
