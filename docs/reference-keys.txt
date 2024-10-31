@@ -84,6 +84,7 @@ homework-3
 correlation
 lab-skills-learned-2
 important-stuff-4
+citations
 background-and-pre-lab-tasks
 assumptions-of-correlation
 install-scatr-module-if-required

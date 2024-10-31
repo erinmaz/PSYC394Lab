@@ -25,9 +25,10 @@ In this lab, we will use JAMOVI to calculate the correlation coefficient. We wil
 
 ## Important Stuff
 
-- citation: Dolan, C. V., Oort, F. J., Stoel, R. D., & Wicherts, J. M. (2009). Testing measurement invariance in the target rotated multigroup exploratory factor model. Structural Equation Modeling, 16(2), 295–314. https://doi.org/10.1080/10705510902751416
 
-- [link to article](https://www.tandfonline.com/doi/full/10.1080/10705510902751416#d1e246) 
+### Citations
+- Dolan, C. V., Oort, F. J., Stoel, R. D., & Wicherts, J. M. (2009). Testing measurement invariance in the target rotated multigroup exploratory factor model. Structural Equation Modeling, 16(2), 295–314. https://doi.org/10.1080/10705510902751416 [link to article](https://www.tandfonline.com/doi/full/10.1080/10705510902751416#d1e246) 
+- Schroeder, J., & Epley, N. (2015). The sound of intellect: Speech reveals a thoughtful mind, increasing a job candidate’s appeal. Psychological Science, 26(6), 877–891. https://doi.org/10.1177/0956797615572906 [link to article](https://journals.sagepub.com/doi/10.1177/0956797615572906)
 
 ## Background and pre-lab tasks
 
