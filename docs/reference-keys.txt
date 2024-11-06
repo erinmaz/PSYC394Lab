@@ -99,3 +99,15 @@ optional-activities
 example-answers-to-optional-activities
 homework-4
 practice-problems-1
+linear-regression
+what-is-the-difference-beteween-correlation-and-regression
+lab-skills-learned-3
+important-stuff-5
+background
+assumptions-of-linear-regression
+context-of-data
+checking-one-assumption-before-conducting-the-analysis
+conducting-the-analysis
+developing-the-regression-model-from-the-statistics
+reporting-the-results
+homework-5
