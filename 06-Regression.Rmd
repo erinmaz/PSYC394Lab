@@ -125,7 +125,7 @@ Estimate of intellect = 1.24 + 0.73(impression) + Ɛ~i~
 ## Reporting the Results 
 
 A regression model was created and is significant [*F*(1, 37) = 80.32, *p* < .0001].  
-This model can account for approximately 68% of the variability in Intellect scores (*R^2^* = .68). The slope of the regression line was significantly different from zero (B = -0.73, *t*(37) = 8.96, *p* < .0001). 
+This model can account for approximately 68% of the variability in Intellect scores (*R^2^* = .68). The slope of the regression line was significantly different from zero (B = 0.73, *t*(37) = 8.96, *p* < .0001). 
 
 ## Homework 
 
