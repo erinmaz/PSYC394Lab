@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Answering questions with data: Lab Manual</title>
   <meta name="description" content="A lab manual for Psyc 394 at StFX" />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Answering questions with data: Lab Manual" />
   <meta property="og:type" content="book" />
@@ -243,7 +243,7 @@ mattcrump=1;
 <h1 class="title">Answering questions with data: Lab Manual</h1>
 <p class="author"><em>Matthew J. C. Crump, Anjali Krishnan, Stephen Volz, and Alla Chavarga</em></p>
 <p class="author"><em>Adapted for PSYC 394, St. Francis Xavier University, by Erin L. Mazerolle and Sherry Neville-MacLean</em></p>
-<p class="date"><em>Last Compiled 2024-11-08</em></p>
+<p class="date"><em>Last Compiled 2025-07-15</em></p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
 <h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -263,7 +263,7 @@ mattcrump=1;
 <p><strong>Version 2.0 = April, 2024</strong></p>
 <p>We updated the lab manual to include JAMOVI activities that will use in PSYC 292 at StFX.</p>
 <p>Section 0.6 of Lab 0 was adapted nearly verbatim, with some editorial changes, from Chapter 3, “Getting started with jamovi,” from Navarro, D.J., &amp; Foxcroft, D.R. (2019). Learning statistics with jamovi: A tutorial for psychology students and other beginners. (Version 0.70) while adhering to its license that states “The book is released under a Creative Commons CC BY-SA 4.0 licence. This means that this book can be reused, remixed, retained, revised and redistributed (including commercially) as long as appropriate credit is given to the authors. If you remix, or modify the original version of this open textbook, you must redistribute all versions of this open textbook under the same license - <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ast">CC BY-SA</a>. DOI: 10.24384/hgc3-7p15</p>
-<p><strong>In progress: Version 3.0.</strong> Last Compiled: 2024-11-08</p>
+<p><strong>In progress: Version 3.0.</strong> Last Compiled: 2025-07-15</p>
 <p>We have split this lab manual from the previous version which incorporated activities for both PSYC 292 and PSYC 394. This version focuses on PSYC 394 only.</p>
 <p>We have created a new activity for Factorial ANOVA.</p>
 </div>
@@ -285,7 +285,7 @@ mattcrump=1;
 <div id="copying-the-lab-manual" class="section level3 hasAnchor" number="0.1.3">
 <h3><span class="header-section-number">0.1.3</span> Copying the lab manual<a href="index.html#copying-the-lab-manual" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This lab manual was written in R-Studio, using R Markdown, and compiled into a web-book format using the bookdown package.</p>
-<p>All of the source code for this book is available in a GitHub repository: <a href="https://github.com/erinmaz/statisticsLab">https://github.com/erinmaz/statisticsLab</a></p>
+<p>All of the source code for this book is available in a GitHub repository: <a href="https://github.com/erinmaz/PSYC394Lab">https://github.com/erinmaz/PSYC394Lab</a></p>
 <p>In addition, the source code for the project this book was based on can be found at: <a href="https://github.com/CrumpLab/statisticsLab">https://github.com/CrumpLab/statisticsLab</a></p>
 <p>In principle, anybody could fork or otherwise download this repository. Load the Rproj file in R-studio, and then compile the entire book. Then, the individual .rmd files for each chapter could be edited for content and style to better suit your needs.</p>
 <p>If you want to contribute to this version of the lab manual, you could make pull requests on GitHub, or discuss issues and request on the issues tab.</p>
@@ -610,60 +610,46 @@ We still haven’t arrived at anything that resembles data analysis. Maybe the n
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/CrumpLab/PSYC394Lab/index.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/CrumpLab/PSYC394Lab/index.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>

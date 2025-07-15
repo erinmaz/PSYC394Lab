@@ -87,7 +87,7 @@ Under the following terms:
 
 This lab manual was written in R-Studio, using R Markdown, and compiled into a web-book format using the bookdown package. 
 
-All of the source code for this book is available in a GitHub repository: [https://github.com/erinmaz/statisticsLab](https://github.com/erinmaz/statisticsLab)
+All of the source code for this book is available in a GitHub repository: [https://github.com/erinmaz/PSYC394Lab](https://github.com/erinmaz/PSYC394Lab)
 
 In addition, the source code for the project this book was based on can be found at: [https://github.com/CrumpLab/statisticsLab](https://github.com/CrumpLab/statisticsLab)
 
