@@ -116,7 +116,7 @@ Looking at the *p*-value, we see a significant result. As such, we have reason t
 
 You likely remember the linear equation from previous education: y = mx + b. The regression model (or equation) is derived from the linear equation, where *b~0~* represents the intercept of the line, *b~1~* represents the slope of the line, and *Ɛ~i~* represents the error in the model. 
 
-Ŷ~i~ = (b~0~ + b~1~X~i~) + Ɛ~~ 
+Ŷ~i~ = (b~0~ + b~1~X~i~) + Ɛ~i~ 
 
 Estimate of Outcome Variable = b~0~ + b~1~(Predictor Variable) + Ɛ~i~ 
 

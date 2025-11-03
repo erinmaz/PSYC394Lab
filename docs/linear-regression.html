@@ -313,7 +313,7 @@ $("#coverpic").hide();
 <div id="developing-the-regression-model-from-the-statistics" class="section level2 hasAnchor" number="6.7">
 <h2><span class="header-section-number">6.7</span> Developing the regression model from the statistics<a href="linear-regression.html#developing-the-regression-model-from-the-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You likely remember the linear equation from previous education: y = mx + b. The regression model (or equation) is derived from the linear equation, where <em>b<sub>0</sub></em> represents the intercept of the line, <em>b<sub>1</sub></em> represents the slope of the line, and <em>Ɛ<sub>i</sub></em> represents the error in the model.</p>
-<p>Ŷ<sub>i</sub> = (b<sub>0</sub> + b<sub>1</sub>X<sub>i</sub>) + Ɛ~~</p>
+<p>Ŷ<sub>i</sub> = (b<sub>0</sub> + b<sub>1</sub>X<sub>i</sub>) + Ɛ<sub>i</sub></p>
 <p>Estimate of Outcome Variable = b<sub>0</sub> + b<sub>1</sub>(Predictor Variable) + Ɛ<sub>i</sub></p>
 <p>Estimate of intellect = 1.24 + 0.73(impression) + Ɛ<sub>i</sub></p>
 </div>
@@ -388,20 +388,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
