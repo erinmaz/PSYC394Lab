@@ -307,7 +307,7 @@ $("#coverpic").hide();
 <p><img src="img/6.8.png" /><!-- --></p>
 <p>The <em>R<sup>2</sup></em> term in the first table tells us what percentage of the variance of the outcome variable can be accounted for by the model. According to our results, this linear regression model based on impression would account for 68% of the variance of intellect. The second table tells us about the slope of our regression line. We see that the <em>p</em>-value for the slope is significantly different from zero when we read the line for <code>impression</code>, where <em>p</em> &lt; .001.</p>
 <p>We also want to be sure that this model is better than simply knowing and using the mean to make our predictions. As such, under the Model Coefficients ribbon, select the ANOVA test under Omnibus Test. The following table should appear in your Results panel:</p>
-<p><img src="img/6.8.png" /><!-- --></p>
+<p><img src="img/6.9.png" /><!-- --></p>
 <p>Looking at the <em>p</em>-value, we see a significant result. As such, we have reason to believe this model has more predictive power than simply knowing the mean.</p>
 </div>
 <div id="developing-the-regression-model-from-the-statistics" class="section level2 hasAnchor" number="6.7">
@@ -388,6 +388,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

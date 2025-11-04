@@ -107,7 +107,7 @@ The *R^2^* term in the first table tells us what percentage of the variance of t
 We also want to be sure that this model is better than simply knowing and using the mean to make our predictions. As such, under the Model Coefficients ribbon, select the ANOVA test under Omnibus Test. The following table should appear in your Results panel: 
 
 ```{r , echo=FALSE,dev='png'} 
-knitr::include_graphics('img/6.8.png') 
+knitr::include_graphics('img/6.9.png') 
 ``` 
 
 Looking at the *p*-value, we see a significant result. As such, we have reason to believe this model has more predictive power than simply knowing the mean.  
