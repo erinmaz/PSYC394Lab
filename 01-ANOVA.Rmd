@@ -172,7 +172,7 @@ knitr::include_graphics('img/OneWayANOVAResultsANOVATableReadingWelchs.png')
 We see our *F*-statistic listed is 6.0824, with a *p*-value of .0019. This tests the null hypothesis that there is no difference among the groups. Since *p* is less than our likely alpha level (.05), we can reject the null hypothesis and conclude that there IS a difference somewhere among these groups. We may say it more formally as follows:
 
 The effect of condition on mean intrusive memories over days 1-7 was significant, *F*(3, 35.75) = 6.08, *p* = .002.  
-
+      
 #### Some APA formatting reminders for writing results sections
 
 1. Always note the name of the test you performed (in this case, one-way analysis of variance, or ANOVA) and whether the result is significant or non-significant *(**Note**: We do not use the word insignificant.)*. 
